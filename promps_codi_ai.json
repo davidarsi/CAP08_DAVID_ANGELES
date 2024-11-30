@@ -1,0 +1,2679 @@
+[
+  {
+    "id": "Sat, 30 Nov 2024 06:53:05 GMT",
+    "lastInteractionTimestamp": "Sat, 30 Nov 2024 06:53:05 GMT",
+    "interactions": [
+      {
+        "humanMessage": {
+          "speaker": "human",
+          "contextFiles": [
+            {
+              "type": "file",
+              "uri": {
+                "$mid": 1,
+                "path": "/c:/Users/davida/Documents/Proyectos/Henry/HW_C8/CAP08_DAVID_ANGELES/challenge.md",
+                "scheme": "file"
+              },
+              "range": [
+                {
+                  "line": 0,
+                  "character": 0
+                },
+                {
+                  "line": 18,
+                  "character": 0
+                }
+              ],
+              "source": "search",
+              "content": "# Tarea: Chatbot con Capacidad de Búsqueda en Internet y Respuestas en Streaming\n\n## Objetivo\n\nDesarrollar un chatbot que funcione desde la consola, manteniendo la memoria de la conversación durante su ejecución y con la capacidad de realizar búsquedas en Internet para enriquecer sus respuestas. Este chatbot debe también proporcionar respuestas en streaming y citar las fuentes de donde extrajo la información.\n\n## Requerimientos\n\n1. **Interfaz de Consola:** El chatbot debe operar a través de una interfaz de consola, permitiendo a los usuarios hacer preguntas y recibir respuestas en tiempo real.\n\n2. **Memoria de Conversación:** Durante el runtime, el chatbot debe recordar el historial de la conversación para utilizarlo como contexto en interacciones futuras.\n\n3. **Búsqueda en Internet:** Implementar function calling para realizar búsquedas en Google usando la API de [https://serper.dev/](https://serper.dev/), que proporciona créditos gratuitos para búsquedas. El chatbot debe procesar información de los primeros 5 enlaces que resulten más relevantes para la pregunta del usuario.\n\n4. **Respuestas en Streaming:** Las respuestas deben ser proporcionadas en tiempo real mientras se procesa la información recopilada, incluyendo una indicación de las fuentes de datos conforme se obtienen y procesan.\n\n5. **Citar Fuentes:** Al final de cada respuesta, el chatbot debe proporcionar los enlaces o referencias de las páginas de donde ha extraído la información, asegurando la transparencia y permitiendo al usuario acceder a la fuente directamente.\n\n",
+              "metadata": [
+                "source:symf-index",
+                "score:64"
+              ],
+              "isTooLarge": false
+            },
+            {
+              "type": "file",
+              "uri": {
+                "$mid": 1,
+                "path": "/c:/Users/davida/Documents/Proyectos/Henry/HW_C8/CAP08_DAVID_ANGELES/challenge.md",
+                "scheme": "file"
+              },
+              "range": [
+                {
+                  "line": 18,
+                  "character": 0
+                },
+                {
+                  "line": 54,
+                  "character": 1577
+                }
+              ],
+              "source": "search",
+              "content": "## Especificaciones Técnicas\n\n- **API de Búsqueda:** Utilizar la API de Serper.dev para realizar búsquedas en Google y obtener enlaces relevantes.\n  \n- **Extracción de Texto:** Desarrollar un módulo que visite cada uno de los primeros 5 enlaces recuperados y extraiga el texto principal de estas páginas.\n\n- **Integración LLM:** Configurar la interacción con un modelo de lenguaje adecuado que pueda tomar tanto el historial de la conversación como los datos extraídos de Internet para generar respuestas coherentes y contextuales.\n\n## Pruebas Automatizadas\n\nCrear pruebas automatizadas que verifiquen la funcionalidad de cada componente, incluyendo la capacidad de realizar búsquedas efectivas, la extracción correcta del texto, y la generación adecuada de respuestas por parte del LLM.\n\n## Ejemplo de Uso\n\n```bash\n> Usuario: ¿Cómo puedo plantar un árbol de manzanas?\n\n> Chatbot: ** Búsqueda en internet **\n\n> Chatbot: Según un artículo en GardeningKnowHow, el mejor momento para plantar árboles de manzana es al inicio de la primavera. También encontré información relevante en WikiHow y PlantingTutorial.com.\n\nReferencias:\n- [GardeningKnowHow](https://gardeningknowhow.com/apple-tree)\n\n- [WikiHow](https://wikihow.com/plant-apple-trees)\n\n- [PlantingTutorial.com](https://plantingtutorial.com/apple-trees).\n```\n\n## Entrega\n\n- Código fuente completo del chatbot.\n- Documentación que describa cómo opera el sistema, incluyendo instrucciones para ejecutar el chatbot y las pruebas.\n- Archivo con pruebas unitarias.\n\n\n",
+              "metadata": [
+                "source:symf-index",
+                "score:71"
+              ],
+              "isTooLarge": false
+            }
+          ],
+          "editorState": {
+            "v": "lexical-v0",
+            "minReaderV": "lexical-v0",
+            "lexicalEditorState": {
+              "root": {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "contextItem": {
+                          "type": "tree",
+                          "uri": "file:///c%3A/Users/davida/Documents/Proyectos/Henry/HW_C8/CAP08_DAVID_ANGELES",
+                          "title": "Current Repository",
+                          "name": "CAP08_DAVID_ANGELES",
+                          "description": "CAP08_DAVID_ANGELES",
+                          "isWorkspaceRoot": true,
+                          "source": "initial",
+                          "icon": "folder"
+                        },
+                        "isFromInitialContext": true,
+                        "type": "contextItemMention",
+                        "text": "CAP08_DAVID_ANGELES",
+                        "version": 1
+                      },
+                      {
+                        "detail": 0,
+                        "format": 0,
+                        "mode": "normal",
+                        "style": "",
+                        "text": " Necesito crear un chatbot en python, dame los pasos para un principante en este lenguaje, no lo conozco, uso windows y estos son mis requerimientos # Tarea: Chatbot con Capacidad de Búsqueda en Internet y Respuestas en Streaming",
+                        "type": "text",
+                        "version": 1
+                      }
+                    ],
+                    "direction": "ltr",
+                    "format": "",
+                    "indent": 0,
+                    "type": "paragraph",
+                    "version": 1,
+                    "textFormat": 0,
+                    "textStyle": ""
+                  },
+                  {
+                    "children": [],
+                    "direction": null,
+                    "format": "",
+                    "indent": 0,
+                    "type": "paragraph",
+                    "version": 1,
+                    "textFormat": 0,
+                    "textStyle": ""
+                  },
+                  {
+                    "children": [],
+                    "direction": null,
+                    "format": "",
+                    "indent": 0,
+                    "type": "paragraph",
+                    "version": 1,
+                    "textFormat": 0,
+                    "textStyle": ""
+                  },
+                  {
+                    "children": [
+                      {
+                        "detail": 0,
+                        "format": 0,
+                        "mode": "normal",
+                        "style": "",
+                        "text": "## Objetivo",
+                        "type": "text",
+                        "version": 1
+                      }
+                    ],
+                    "direction": "ltr",
+                    "format": "",
+                    "indent": 0,
+                    "type": "paragraph",
+                    "version": 1,
+                    "textFormat": 0,
+                    "textStyle": ""
+                  },
+                  {
+                    "children": [],
+                    "direction": null,
+                    "format": "",
+                    "indent": 0,
+                    "type": "paragraph",
+                    "version": 1,
+                    "textFormat": 0,
+                    "textStyle": ""
+                  },
+                  {
+                    "children": [],
+                    "direction": null,
+                    "format": "",
+                    "indent": 0,
+                    "type": "paragraph",
+                    "version": 1,
+                    "textFormat": 0,
+                    "textStyle": ""
+                  },
+                  {
+                    "children": [
+                      {
+                        "detail": 0,
+                        "format": 0,
+                        "mode": "normal",
+                        "style": "",
+                        "text": "Desarrollar un chatbot que funcione desde la consola, manteniendo la memoria de la conversación durante su ejecución y con la capacidad de realizar búsquedas en Internet para enriquecer sus respuestas. Este chatbot debe también proporcionar respuestas en streaming y citar las fuentes de donde extrajo la información.",
+                        "type": "text",
+                        "version": 1
+                      }
+                    ],
+                    "direction": "ltr",
+                    "format": "",
+                    "indent": 0,
+                    "type": "paragraph",
+                    "version": 1,
+                    "textFormat": 0,
+                    "textStyle": ""
+                  },
+                  {
+                    "children": [],
+                    "direction": null,
+                    "format": "",
+                    "indent": 0,
+                    "type": "paragraph",
+                    "version": 1,
+                    "textFormat": 0,
+                    "textStyle": ""
+                  },
+                  {
+                    "children": [],
+                    "direction": null,
+                    "format": "",
+                    "indent": 0,
+                    "type": "paragraph",
+                    "version": 1,
+                    "textFormat": 0,
+                    "textStyle": ""
+                  },
+                  {
+                    "children": [
+                      {
+                        "detail": 0,
+                        "format": 0,
+                        "mode": "normal",
+                        "style": "",
+                        "text": "## Requerimientos",
+                        "type": "text",
+                        "version": 1
+                      }
+                    ],
+                    "direction": "ltr",
+                    "format": "",
+                    "indent": 0,
+                    "type": "paragraph",
+                    "version": 1,
+                    "textFormat": 0,
+                    "textStyle": ""
+                  },
+                  {
+                    "children": [],
+                    "direction": null,
+                    "format": "",
+                    "indent": 0,
+                    "type": "paragraph",
+                    "version": 1,
+                    "textFormat": 0,
+                    "textStyle": ""
+                  },
+                  {
+                    "children": [],
+                    "direction": null,
+                    "format": "",
+                    "indent": 0,
+                    "type": "paragraph",
+                    "version": 1,
+                    "textFormat": 0,
+                    "textStyle": ""
+                  },
+                  {
+                    "children": [
+                      {
+                        "detail": 0,
+                        "format": 0,
+                        "mode": "normal",
+                        "style": "",
+                        "text": "1. **Interfaz de Consola:** El chatbot debe operar a través de una interfaz de consola, permitiendo a los usuarios hacer preguntas y recibir respuestas en tiempo real.",
+                        "type": "text",
+                        "version": 1
+                      }
+                    ],
+                    "direction": "ltr",
+                    "format": "",
+                    "indent": 0,
+                    "type": "paragraph",
+                    "version": 1,
+                    "textFormat": 0,
+                    "textStyle": ""
+                  },
+                  {
+                    "children": [],
+                    "direction": null,
+                    "format": "",
+                    "indent": 0,
+                    "type": "paragraph",
+                    "version": 1,
+                    "textFormat": 0,
+                    "textStyle": ""
+                  },
+                  {
+                    "children": [],
+                    "direction": null,
+                    "format": "",
+                    "indent": 0,
+                    "type": "paragraph",
+                    "version": 1,
+                    "textFormat": 0,
+                    "textStyle": ""
+                  },
+                  {
+                    "children": [
+                      {
+                        "detail": 0,
+                        "format": 0,
+                        "mode": "normal",
+                        "style": "",
+                        "text": "2. **Memoria de Conversación:** Durante el runtime, el chatbot debe recordar el historial de la conversación para utilizarlo como contexto en interacciones futuras.",
+                        "type": "text",
+                        "version": 1
+                      }
+                    ],
+                    "direction": "ltr",
+                    "format": "",
+                    "indent": 0,
+                    "type": "paragraph",
+                    "version": 1,
+                    "textFormat": 0,
+                    "textStyle": ""
+                  },
+                  {
+                    "children": [],
+                    "direction": null,
+                    "format": "",
+                    "indent": 0,
+                    "type": "paragraph",
+                    "version": 1,
+                    "textFormat": 0,
+                    "textStyle": ""
+                  },
+                  {
+                    "children": [],
+                    "direction": null,
+                    "format": "",
+                    "indent": 0,
+                    "type": "paragraph",
+                    "version": 1,
+                    "textFormat": 0,
+                    "textStyle": ""
+                  },
+                  {
+                    "children": [
+                      {
+                        "detail": 0,
+                        "format": 0,
+                        "mode": "normal",
+                        "style": "",
+                        "text": "3. **Búsqueda en Internet:** Implementar function calling para realizar búsquedas en Google usando la API de [https://serper.dev/](https://serper.dev/), que proporciona créditos gratuitos para búsquedas. El chatbot debe procesar información de los primeros 5 enlaces que resulten más relevantes para la pregunta del usuario.",
+                        "type": "text",
+                        "version": 1
+                      }
+                    ],
+                    "direction": "ltr",
+                    "format": "",
+                    "indent": 0,
+                    "type": "paragraph",
+                    "version": 1,
+                    "textFormat": 0,
+                    "textStyle": ""
+                  },
+                  {
+                    "children": [],
+                    "direction": null,
+                    "format": "",
+                    "indent": 0,
+                    "type": "paragraph",
+                    "version": 1,
+                    "textFormat": 0,
+                    "textStyle": ""
+                  },
+                  {
+                    "children": [],
+                    "direction": null,
+                    "format": "",
+                    "indent": 0,
+                    "type": "paragraph",
+                    "version": 1,
+                    "textFormat": 0,
+                    "textStyle": ""
+                  },
+                  {
+                    "children": [
+                      {
+                        "detail": 0,
+                        "format": 0,
+                        "mode": "normal",
+                        "style": "",
+                        "text": "4. **Respuestas en Streaming:** Las respuestas deben ser proporcionadas en tiempo real mientras se procesa la información recopilada, incluyendo una indicación de las fuentes de datos conforme se obtienen y procesan.",
+                        "type": "text",
+                        "version": 1
+                      }
+                    ],
+                    "direction": "ltr",
+                    "format": "",
+                    "indent": 0,
+                    "type": "paragraph",
+                    "version": 1,
+                    "textFormat": 0,
+                    "textStyle": ""
+                  },
+                  {
+                    "children": [],
+                    "direction": null,
+                    "format": "",
+                    "indent": 0,
+                    "type": "paragraph",
+                    "version": 1,
+                    "textFormat": 0,
+                    "textStyle": ""
+                  },
+                  {
+                    "children": [],
+                    "direction": null,
+                    "format": "",
+                    "indent": 0,
+                    "type": "paragraph",
+                    "version": 1,
+                    "textFormat": 0,
+                    "textStyle": ""
+                  },
+                  {
+                    "children": [
+                      {
+                        "detail": 0,
+                        "format": 0,
+                        "mode": "normal",
+                        "style": "",
+                        "text": "5. **Citar Fuentes:** Al final de cada respuesta, el chatbot debe proporcionar los enlaces o referencias de las páginas de donde ha extraído la información, asegurando la transparencia y permitiendo al usuario acceder a la fuente directamente.",
+                        "type": "text",
+                        "version": 1
+                      }
+                    ],
+                    "direction": "ltr",
+                    "format": "",
+                    "indent": 0,
+                    "type": "paragraph",
+                    "version": 1,
+                    "textFormat": 0,
+                    "textStyle": ""
+                  },
+                  {
+                    "children": [],
+                    "direction": null,
+                    "format": "",
+                    "indent": 0,
+                    "type": "paragraph",
+                    "version": 1,
+                    "textFormat": 0,
+                    "textStyle": ""
+                  },
+                  {
+                    "children": [],
+                    "direction": null,
+                    "format": "",
+                    "indent": 0,
+                    "type": "paragraph",
+                    "version": 1,
+                    "textFormat": 0,
+                    "textStyle": ""
+                  },
+                  {
+                    "children": [
+                      {
+                        "detail": 0,
+                        "format": 0,
+                        "mode": "normal",
+                        "style": "",
+                        "text": "## Especificaciones Técnicas",
+                        "type": "text",
+                        "version": 1
+                      }
+                    ],
+                    "direction": "ltr",
+                    "format": "",
+                    "indent": 0,
+                    "type": "paragraph",
+                    "version": 1,
+                    "textFormat": 0,
+                    "textStyle": ""
+                  },
+                  {
+                    "children": [],
+                    "direction": null,
+                    "format": "",
+                    "indent": 0,
+                    "type": "paragraph",
+                    "version": 1,
+                    "textFormat": 0,
+                    "textStyle": ""
+                  },
+                  {
+                    "children": [],
+                    "direction": null,
+                    "format": "",
+                    "indent": 0,
+                    "type": "paragraph",
+                    "version": 1,
+                    "textFormat": 0,
+                    "textStyle": ""
+                  },
+                  {
+                    "children": [
+                      {
+                        "detail": 0,
+                        "format": 0,
+                        "mode": "normal",
+                        "style": "",
+                        "text": "- **API de Búsqueda:** Utilizar la API de Serper.dev para realizar búsquedas en Google y obtener enlaces relevantes.",
+                        "type": "text",
+                        "version": 1
+                      }
+                    ],
+                    "direction": "ltr",
+                    "format": "",
+                    "indent": 0,
+                    "type": "paragraph",
+                    "version": 1,
+                    "textFormat": 0,
+                    "textStyle": ""
+                  },
+                  {
+                    "children": [
+                      {
+                        "detail": 0,
+                        "format": 0,
+                        "mode": "normal",
+                        "style": "",
+                        "text": " ",
+                        "type": "text",
+                        "version": 1
+                      }
+                    ],
+                    "direction": null,
+                    "format": "",
+                    "indent": 0,
+                    "type": "paragraph",
+                    "version": 1,
+                    "textFormat": 0,
+                    "textStyle": ""
+                  },
+                  {
+                    "children": [
+                      {
+                        "detail": 0,
+                        "format": 0,
+                        "mode": "normal",
+                        "style": "",
+                        "text": "- **Extracción de Texto:** Desarrollar un módulo que visite cada uno de los primeros 5 enlaces recuperados y extraiga el texto principal de estas páginas.",
+                        "type": "text",
+                        "version": 1
+                      }
+                    ],
+                    "direction": "ltr",
+                    "format": "",
+                    "indent": 0,
+                    "type": "paragraph",
+                    "version": 1,
+                    "textFormat": 0,
+                    "textStyle": ""
+                  },
+                  {
+                    "children": [],
+                    "direction": null,
+                    "format": "",
+                    "indent": 0,
+                    "type": "paragraph",
+                    "version": 1,
+                    "textFormat": 0,
+                    "textStyle": ""
+                  },
+                  {
+                    "children": [],
+                    "direction": null,
+                    "format": "",
+                    "indent": 0,
+                    "type": "paragraph",
+                    "version": 1,
+                    "textFormat": 0,
+                    "textStyle": ""
+                  },
+                  {
+                    "children": [
+                      {
+                        "detail": 0,
+                        "format": 0,
+                        "mode": "normal",
+                        "style": "",
+                        "text": "- **Integración LLM:** Configurar la interacción con un modelo de lenguaje adecuado que pueda tomar tanto el historial de la conversación como los datos extraídos de Internet para generar respuestas coherentes y contextuales.",
+                        "type": "text",
+                        "version": 1
+                      }
+                    ],
+                    "direction": "ltr",
+                    "format": "",
+                    "indent": 0,
+                    "type": "paragraph",
+                    "version": 1,
+                    "textFormat": 0,
+                    "textStyle": ""
+                  },
+                  {
+                    "children": [],
+                    "direction": null,
+                    "format": "",
+                    "indent": 0,
+                    "type": "paragraph",
+                    "version": 1,
+                    "textFormat": 0,
+                    "textStyle": ""
+                  },
+                  {
+                    "children": [],
+                    "direction": null,
+                    "format": "",
+                    "indent": 0,
+                    "type": "paragraph",
+                    "version": 1,
+                    "textFormat": 0,
+                    "textStyle": ""
+                  },
+                  {
+                    "children": [
+                      {
+                        "detail": 0,
+                        "format": 0,
+                        "mode": "normal",
+                        "style": "",
+                        "text": "## Pruebas Automatizadas",
+                        "type": "text",
+                        "version": 1
+                      }
+                    ],
+                    "direction": "ltr",
+                    "format": "",
+                    "indent": 0,
+                    "type": "paragraph",
+                    "version": 1,
+                    "textFormat": 0,
+                    "textStyle": ""
+                  },
+                  {
+                    "children": [],
+                    "direction": null,
+                    "format": "",
+                    "indent": 0,
+                    "type": "paragraph",
+                    "version": 1,
+                    "textFormat": 0,
+                    "textStyle": ""
+                  },
+                  {
+                    "children": [],
+                    "direction": null,
+                    "format": "",
+                    "indent": 0,
+                    "type": "paragraph",
+                    "version": 1,
+                    "textFormat": 0,
+                    "textStyle": ""
+                  },
+                  {
+                    "children": [
+                      {
+                        "detail": 0,
+                        "format": 0,
+                        "mode": "normal",
+                        "style": "",
+                        "text": "Crear pruebas automatizadas que verifiquen la funcionalidad de cada componente, incluyendo la capacidad de realizar búsquedas efectivas, la extracción correcta del texto, y la generación adecuada de respuestas por parte del LLM.",
+                        "type": "text",
+                        "version": 1
+                      }
+                    ],
+                    "direction": "ltr",
+                    "format": "",
+                    "indent": 0,
+                    "type": "paragraph",
+                    "version": 1,
+                    "textFormat": 0,
+                    "textStyle": ""
+                  },
+                  {
+                    "children": [],
+                    "direction": null,
+                    "format": "",
+                    "indent": 0,
+                    "type": "paragraph",
+                    "version": 1,
+                    "textFormat": 0,
+                    "textStyle": ""
+                  },
+                  {
+                    "children": [],
+                    "direction": null,
+                    "format": "",
+                    "indent": 0,
+                    "type": "paragraph",
+                    "version": 1,
+                    "textFormat": 0,
+                    "textStyle": ""
+                  },
+                  {
+                    "children": [
+                      {
+                        "detail": 0,
+                        "format": 0,
+                        "mode": "normal",
+                        "style": "",
+                        "text": "## Ejemplo de Uso",
+                        "type": "text",
+                        "version": 1
+                      }
+                    ],
+                    "direction": "ltr",
+                    "format": "",
+                    "indent": 0,
+                    "type": "paragraph",
+                    "version": 1,
+                    "textFormat": 0,
+                    "textStyle": ""
+                  },
+                  {
+                    "children": [],
+                    "direction": null,
+                    "format": "",
+                    "indent": 0,
+                    "type": "paragraph",
+                    "version": 1,
+                    "textFormat": 0,
+                    "textStyle": ""
+                  },
+                  {
+                    "children": [],
+                    "direction": null,
+                    "format": "",
+                    "indent": 0,
+                    "type": "paragraph",
+                    "version": 1,
+                    "textFormat": 0,
+                    "textStyle": ""
+                  },
+                  {
+                    "children": [
+                      {
+                        "detail": 0,
+                        "format": 0,
+                        "mode": "normal",
+                        "style": "",
+                        "text": "```bash",
+                        "type": "text",
+                        "version": 1
+                      }
+                    ],
+                    "direction": "ltr",
+                    "format": "",
+                    "indent": 0,
+                    "type": "paragraph",
+                    "version": 1,
+                    "textFormat": 0,
+                    "textStyle": ""
+                  },
+                  {
+                    "children": [
+                      {
+                        "detail": 0,
+                        "format": 0,
+                        "mode": "normal",
+                        "style": "",
+                        "text": "> Usuario: ¿Cómo puedo plantar un árbol de manzanas?",
+                        "type": "text",
+                        "version": 1
+                      }
+                    ],
+                    "direction": "ltr",
+                    "format": "",
+                    "indent": 0,
+                    "type": "paragraph",
+                    "version": 1,
+                    "textFormat": 0,
+                    "textStyle": ""
+                  },
+                  {
+                    "children": [],
+                    "direction": null,
+                    "format": "",
+                    "indent": 0,
+                    "type": "paragraph",
+                    "version": 1,
+                    "textFormat": 0,
+                    "textStyle": ""
+                  },
+                  {
+                    "children": [],
+                    "direction": null,
+                    "format": "",
+                    "indent": 0,
+                    "type": "paragraph",
+                    "version": 1,
+                    "textFormat": 0,
+                    "textStyle": ""
+                  },
+                  {
+                    "children": [
+                      {
+                        "detail": 0,
+                        "format": 0,
+                        "mode": "normal",
+                        "style": "",
+                        "text": "> Chatbot: ** Búsqueda en internet **",
+                        "type": "text",
+                        "version": 1
+                      }
+                    ],
+                    "direction": "ltr",
+                    "format": "",
+                    "indent": 0,
+                    "type": "paragraph",
+                    "version": 1,
+                    "textFormat": 0,
+                    "textStyle": ""
+                  },
+                  {
+                    "children": [],
+                    "direction": null,
+                    "format": "",
+                    "indent": 0,
+                    "type": "paragraph",
+                    "version": 1,
+                    "textFormat": 0,
+                    "textStyle": ""
+                  },
+                  {
+                    "children": [],
+                    "direction": null,
+                    "format": "",
+                    "indent": 0,
+                    "type": "paragraph",
+                    "version": 1,
+                    "textFormat": 0,
+                    "textStyle": ""
+                  },
+                  {
+                    "children": [
+                      {
+                        "detail": 0,
+                        "format": 0,
+                        "mode": "normal",
+                        "style": "",
+                        "text": "> Chatbot: Según un artículo en GardeningKnowHow, el mejor momento para plantar árboles de manzana es al inicio de la primavera. También encontré información relevante en WikiHow y PlantingTutorial.com.",
+                        "type": "text",
+                        "version": 1
+                      }
+                    ],
+                    "direction": "ltr",
+                    "format": "",
+                    "indent": 0,
+                    "type": "paragraph",
+                    "version": 1,
+                    "textFormat": 0,
+                    "textStyle": ""
+                  },
+                  {
+                    "children": [],
+                    "direction": null,
+                    "format": "",
+                    "indent": 0,
+                    "type": "paragraph",
+                    "version": 1,
+                    "textFormat": 0,
+                    "textStyle": ""
+                  },
+                  {
+                    "children": [],
+                    "direction": null,
+                    "format": "",
+                    "indent": 0,
+                    "type": "paragraph",
+                    "version": 1,
+                    "textFormat": 0,
+                    "textStyle": ""
+                  },
+                  {
+                    "children": [
+                      {
+                        "detail": 0,
+                        "format": 0,
+                        "mode": "normal",
+                        "style": "",
+                        "text": "Referencias:",
+                        "type": "text",
+                        "version": 1
+                      }
+                    ],
+                    "direction": "ltr",
+                    "format": "",
+                    "indent": 0,
+                    "type": "paragraph",
+                    "version": 1,
+                    "textFormat": 0,
+                    "textStyle": ""
+                  },
+                  {
+                    "children": [
+                      {
+                        "detail": 0,
+                        "format": 0,
+                        "mode": "normal",
+                        "style": "",
+                        "text": "- [GardeningKnowHow](https://gardeningknowhow.com/apple-tree)",
+                        "type": "text",
+                        "version": 1
+                      }
+                    ],
+                    "direction": "ltr",
+                    "format": "",
+                    "indent": 0,
+                    "type": "paragraph",
+                    "version": 1,
+                    "textFormat": 0,
+                    "textStyle": ""
+                  },
+                  {
+                    "children": [],
+                    "direction": null,
+                    "format": "",
+                    "indent": 0,
+                    "type": "paragraph",
+                    "version": 1,
+                    "textFormat": 0,
+                    "textStyle": ""
+                  },
+                  {
+                    "children": [],
+                    "direction": null,
+                    "format": "",
+                    "indent": 0,
+                    "type": "paragraph",
+                    "version": 1,
+                    "textFormat": 0,
+                    "textStyle": ""
+                  },
+                  {
+                    "children": [
+                      {
+                        "detail": 0,
+                        "format": 0,
+                        "mode": "normal",
+                        "style": "",
+                        "text": "- [WikiHow](https://wikihow.com/plant-apple-trees)",
+                        "type": "text",
+                        "version": 1
+                      }
+                    ],
+                    "direction": "ltr",
+                    "format": "",
+                    "indent": 0,
+                    "type": "paragraph",
+                    "version": 1,
+                    "textFormat": 0,
+                    "textStyle": ""
+                  },
+                  {
+                    "children": [],
+                    "direction": null,
+                    "format": "",
+                    "indent": 0,
+                    "type": "paragraph",
+                    "version": 1,
+                    "textFormat": 0,
+                    "textStyle": ""
+                  },
+                  {
+                    "children": [],
+                    "direction": null,
+                    "format": "",
+                    "indent": 0,
+                    "type": "paragraph",
+                    "version": 1,
+                    "textFormat": 0,
+                    "textStyle": ""
+                  },
+                  {
+                    "children": [
+                      {
+                        "detail": 0,
+                        "format": 0,
+                        "mode": "normal",
+                        "style": "",
+                        "text": "- [PlantingTutorial.com](https://plantingtutorial.com/apple-trees).",
+                        "type": "text",
+                        "version": 1
+                      }
+                    ],
+                    "direction": "ltr",
+                    "format": "",
+                    "indent": 0,
+                    "type": "paragraph",
+                    "version": 1,
+                    "textFormat": 0,
+                    "textStyle": ""
+                  },
+                  {
+                    "children": [
+                      {
+                        "detail": 0,
+                        "format": 0,
+                        "mode": "normal",
+                        "style": "",
+                        "text": "```",
+                        "type": "text",
+                        "version": 1
+                      }
+                    ],
+                    "direction": null,
+                    "format": "",
+                    "indent": 0,
+                    "type": "paragraph",
+                    "version": 1,
+                    "textFormat": 0,
+                    "textStyle": ""
+                  },
+                  {
+                    "children": [],
+                    "direction": null,
+                    "format": "",
+                    "indent": 0,
+                    "type": "paragraph",
+                    "version": 1,
+                    "textFormat": 0,
+                    "textStyle": ""
+                  },
+                  {
+                    "children": [],
+                    "direction": null,
+                    "format": "",
+                    "indent": 0,
+                    "type": "paragraph",
+                    "version": 1,
+                    "textFormat": 0,
+                    "textStyle": ""
+                  },
+                  {
+                    "children": [
+                      {
+                        "detail": 0,
+                        "format": 0,
+                        "mode": "normal",
+                        "style": "",
+                        "text": "## Entrega",
+                        "type": "text",
+                        "version": 1
+                      }
+                    ],
+                    "direction": "ltr",
+                    "format": "",
+                    "indent": 0,
+                    "type": "paragraph",
+                    "version": 1,
+                    "textFormat": 0,
+                    "textStyle": ""
+                  },
+                  {
+                    "children": [],
+                    "direction": null,
+                    "format": "",
+                    "indent": 0,
+                    "type": "paragraph",
+                    "version": 1,
+                    "textFormat": 0,
+                    "textStyle": ""
+                  },
+                  {
+                    "children": [],
+                    "direction": null,
+                    "format": "",
+                    "indent": 0,
+                    "type": "paragraph",
+                    "version": 1,
+                    "textFormat": 0,
+                    "textStyle": ""
+                  },
+                  {
+                    "children": [
+                      {
+                        "detail": 0,
+                        "format": 0,
+                        "mode": "normal",
+                        "style": "",
+                        "text": "- Código fuente completo del chatbot.",
+                        "type": "text",
+                        "version": 1
+                      }
+                    ],
+                    "direction": "ltr",
+                    "format": "",
+                    "indent": 0,
+                    "type": "paragraph",
+                    "version": 1,
+                    "textFormat": 0,
+                    "textStyle": ""
+                  },
+                  {
+                    "children": [
+                      {
+                        "detail": 0,
+                        "format": 0,
+                        "mode": "normal",
+                        "style": "",
+                        "text": "- Documentación que describa cómo opera el sistema, incluyendo instrucciones para ejecutar el chatbot y las pruebas.",
+                        "type": "text",
+                        "version": 1
+                      }
+                    ],
+                    "direction": "ltr",
+                    "format": "",
+                    "indent": 0,
+                    "type": "paragraph",
+                    "version": 1,
+                    "textFormat": 0,
+                    "textStyle": ""
+                  },
+                  {
+                    "children": [
+                      {
+                        "detail": 0,
+                        "format": 0,
+                        "mode": "normal",
+                        "style": "",
+                        "text": "- Archivo con pruebas unitarias.",
+                        "type": "text",
+                        "version": 1
+                      }
+                    ],
+                    "direction": "ltr",
+                    "format": "",
+                    "indent": 0,
+                    "type": "paragraph",
+                    "version": 1,
+                    "textFormat": 0,
+                    "textStyle": ""
+                  },
+                  {
+                    "children": [],
+                    "direction": null,
+                    "format": "",
+                    "indent": 0,
+                    "type": "paragraph",
+                    "version": 1,
+                    "textFormat": 0,
+                    "textStyle": ""
+                  },
+                  {
+                    "children": [],
+                    "direction": null,
+                    "format": "",
+                    "indent": 0,
+                    "type": "paragraph",
+                    "version": 1,
+                    "textFormat": 0,
+                    "textStyle": ""
+                  },
+                  {
+                    "children": [
+                      {
+                        "detail": 0,
+                        "format": 0,
+                        "mode": "normal",
+                        "style": "",
+                        "text": "necesito las api key con variables de entorno ",
+                        "type": "text",
+                        "version": 1
+                      }
+                    ],
+                    "direction": "ltr",
+                    "format": "",
+                    "indent": 0,
+                    "type": "paragraph",
+                    "version": 1,
+                    "textFormat": 0,
+                    "textStyle": ""
+                  }
+                ],
+                "direction": "ltr",
+                "format": "",
+                "indent": 0,
+                "type": "root",
+                "version": 1
+              }
+            }
+          },
+          "text": "CAP08_DAVID_ANGELES Necesito crear un chatbot en python, dame los pasos para un principante en este lenguaje, no lo conozco, uso windows y estos son mis requerimientos # Tarea: Chatbot con Capacidad de Búsqueda en Internet y Respuestas en Streaming\n\n\n\n\n\n## Objetivo\n\n\n\n\n\nDesarrollar un chatbot que funcione desde la consola, manteniendo la memoria de la conversación durante su ejecución y con la capacidad de realizar búsquedas en Internet para enriquecer sus respuestas. Este chatbot debe también proporcionar respuestas en streaming y citar las fuentes de donde extrajo la información.\n\n\n\n\n\n## Requerimientos\n\n\n\n\n\n1. **Interfaz de Consola:** El chatbot debe operar a través de una interfaz de consola, permitiendo a los usuarios hacer preguntas y recibir respuestas en tiempo real.\n\n\n\n\n\n2. **Memoria de Conversación:** Durante el runtime, el chatbot debe recordar el historial de la conversación para utilizarlo como contexto en interacciones futuras.\n\n\n\n\n\n3. **Búsqueda en Internet:** Implementar function calling para realizar búsquedas en Google usando la API de [https://serper.dev/](https://serper.dev/), que proporciona créditos gratuitos para búsquedas. El chatbot debe procesar información de los primeros 5 enlaces que resulten más relevantes para la pregunta del usuario.\n\n\n\n\n\n4. **Respuestas en Streaming:** Las respuestas deben ser proporcionadas en tiempo real mientras se procesa la información recopilada, incluyendo una indicación de las fuentes de datos conforme se obtienen y procesan.\n\n\n\n\n\n5. **Citar Fuentes:** Al final de cada respuesta, el chatbot debe proporcionar los enlaces o referencias de las páginas de donde ha extraído la información, asegurando la transparencia y permitiendo al usuario acceder a la fuente directamente.\n\n\n\n\n\n## Especificaciones Técnicas\n\n\n\n\n\n- **API de Búsqueda:** Utilizar la API de Serper.dev para realizar búsquedas en Google y obtener enlaces relevantes.\n\n \n\n- **Extracción de Texto:** Desarrollar un módulo que visite cada uno de los primeros 5 enlaces recuperados y extraiga el texto principal de estas páginas.\n\n\n\n\n\n- **Integración LLM:** Configurar la interacción con un modelo de lenguaje adecuado que pueda tomar tanto el historial de la conversación como los datos extraídos de Internet para generar respuestas coherentes y contextuales.\n\n\n\n\n\n## Pruebas Automatizadas\n\n\n\n\n\nCrear pruebas automatizadas que verifiquen la funcionalidad de cada componente, incluyendo la capacidad de realizar búsquedas efectivas, la extracción correcta del texto, y la generación adecuada de respuestas por parte del LLM.\n\n\n\n\n\n## Ejemplo de Uso\n\n\n\n\n\n```bash\n\n> Usuario: ¿Cómo puedo plantar un árbol de manzanas?\n\n\n\n\n\n> Chatbot: ** Búsqueda en internet **\n\n\n\n\n\n> Chatbot: Según un artículo en GardeningKnowHow, el mejor momento para plantar árboles de manzana es al inicio de la primavera. También encontré información relevante en WikiHow y PlantingTutorial.com.\n\n\n\n\n\nReferencias:\n\n- [GardeningKnowHow](https://gardeningknowhow.com/apple-tree)\n\n\n\n\n\n- [WikiHow](https://wikihow.com/plant-apple-trees)\n\n\n\n\n\n- [PlantingTutorial.com](https://plantingtutorial.com/apple-trees).\n\n```\n\n\n\n\n\n## Entrega\n\n\n\n\n\n- Código fuente completo del chatbot.\n\n- Documentación que describa cómo opera el sistema, incluyendo instrucciones para ejecutar el chatbot y las pruebas.\n\n- Archivo con pruebas unitarias.\n\n\n\n\n\nnecesito las api key con variables de entorno "
+        },
+        "assistantMessage": {
+          "speaker": "assistant",
+          "model": "anthropic::2024-10-22::claude-3-5-sonnet-latest",
+          "text": "¡Perfecto! Te guiaré paso a paso para crear tu chatbot en Python. Aquí está la guía para principiantes:\n\n1. **Preparación del Entorno**\nPrimero, necesitas instalar Python en Windows:\n```bash\nwinget install Python.Python.3.11\n```\n\n2. **Crear un directorio para el proyecto**\n```bash\nmkdir mi_chatbot\ncd mi_chatbot\n```\n\n3. **Crear un entorno virtual**\n```bash\npython -m venv venv\n```\n\n4. **Activar el entorno virtual**\n```bash\n.\\venv\\Scripts\\activate\n```\n\n5. **Instalar las dependencias necesarias**\n```bash\npip install python-dotenv requests openai beautifulsoup4 pytest\n```\n\n6. **Estructura de archivos recomendada**\nCrea los siguientes archivos en tu proyecto:\n\n```python:config.py\nimport os\nfrom dotenv import load_dotenv\n\nload_dotenv()\n\nSERPER_API_KEY = os.getenv('SERPER_API_KEY')\nOPENAI_API_KEY = os.getenv('OPENAI_API_KEY')\n```\n\n```python:chatbot.py\nimport os\nimport requests\nfrom config import SERPER_API_KEY, OPENAI_API_KEY\n\nclass Chatbot:\n    def __init__(self):\n        self.conversation_history = []\n        self.serper_api_key = SERPER_API_KEY\n        self.openai_api_key = OPENAI_API_KEY\n\n    def search_internet(self, query):\n        headers = {\n            'X-API-KEY': self.serper_api_key,\n            'Content-Type': 'application/json'\n        }\n        url = 'https://google.serper.dev/search'\n        payload = {'q': query}\n        \n        response = requests.post(url, headers=headers, json=payload)\n        return response.json()\n\n    def chat(self):\n        print(\"¡Hola! Soy tu chatbot. Escribe 'salir' para terminar.\")\n        \n        while True:\n            user_input = input(\"Tú: \")\n            if user_input.lower() == 'salir':\n                break\n                \n            # Guardar la conversación\n            self.conversation_history.append({\"role\": \"user\", \"content\": user_input})\n            \n            # Realizar búsqueda\n            print(\"** Buscando en internet **\")\n            search_results = self.search_internet(user_input)\n            \n            # Aquí iría la lógica para procesar los resultados\n            # y generar una respuesta usando OpenAI\n            \n            print(\"Chatbot: [Aquí va tu respuesta]\")\n\nif __name__ == \"__main__\":\n    chatbot = Chatbot()\n    chatbot.chat()\n```\n\n7. **Crear archivo .env**\nCrea un archivo llamado `.env` en la raíz del proyecto:\n```text:.env\nSERPER_API_KEY=tu_clave_de_serper_aqui\nOPENAI_API_KEY=tu_clave_de_openai_aqui\n```\n\n8. **Crear archivo de pruebas**\n```python:test_chatbot.py\nimport pytest\nfrom chatbot import Chatbot\n\ndef test_chatbot_initialization():\n    chatbot = Chatbot()\n    assert chatbot.conversation_history == []\n    assert chatbot.serper_api_key is not None\n    assert chatbot.openai_api_key is not None\n```\n\n9. **Para ejecutar el chatbot**\n```bash\npython chatbot.py\n```\n\n10. **Para ejecutar las pruebas**\n```bash\npytest test_chatbot.py\n```\n\nPasos siguientes para completar el proyecto:\n\n1. Obtén tus API keys:\n   - Regístrate en https://serper.dev para obtener SERPER_API_KEY\n   - Regístrate en https://platform.openai.com para obtener OPENAI_API_KEY\n\n2. Implementa estas funcionalidades adicionales:\n   - Extracción de texto de las URLs\n   - Integración con OpenAI para procesar respuestas\n   - Streaming de respuestas\n   - Sistema de citación de fuentes\n\n3. Mejora el manejo de errores y la documentación\n\nEste es un esqueleto básico que puedes ir mejorando gradualmente. ¿Te gustaría que profundicemos en alguna parte específica?"
+        }
+      },
+      {
+        "humanMessage": {
+          "speaker": "human",
+          "contextFiles": [],
+          "editorState": {
+            "v": "lexical-v0",
+            "minReaderV": "lexical-v0",
+            "lexicalEditorState": {
+              "root": {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "detail": 0,
+                        "format": 0,
+                        "mode": "normal",
+                        "style": "",
+                        "text": "Dame todo el código de python en un solo archivo y vuelve a explicarme todo detalladamente, yo uso windows",
+                        "type": "text",
+                        "version": 1
+                      }
+                    ],
+                    "direction": "ltr",
+                    "format": "",
+                    "indent": 0,
+                    "type": "paragraph",
+                    "version": 1,
+                    "textFormat": 0,
+                    "textStyle": ""
+                  }
+                ],
+                "direction": "ltr",
+                "format": "",
+                "indent": 0,
+                "type": "root",
+                "version": 1
+              }
+            }
+          },
+          "text": "Dame todo el código de python en un solo archivo y vuelve a explicarme todo detalladamente, yo uso windows"
+        },
+        "assistantMessage": {
+          "speaker": "assistant",
+          "model": "anthropic::2024-10-22::claude-3-5-sonnet-latest",
+          "text": "¡Por supuesto! Aquí tienes el código completo en un solo archivo con todos los componentes necesarios. Vamos a llamarlo `chatbot_completo.py`:\n\n```python:chatbot_completo.py\nimport os\nimport requests\nimport openai\nfrom bs4 import BeautifulSoup\nfrom dotenv import load_dotenv\nfrom typing import List, Dict\n\n# Cargar variables de entorno\nload_dotenv()\n\n# Configuración de APIs\nSERPER_API_KEY = os.getenv('SERPER_API_KEY')\nOPENAI_API_KEY = os.getenv('OPENAI_API_KEY')\nopenai.api_key = OPENAI_API_KEY\n\nclass Chatbot:\n    def __init__(self):\n        self.conversation_history = []\n        self.sources = []\n\n    def search_internet(self, query: str) -> List[Dict]:\n        \"\"\"Realiza búsqueda en Google usando Serper API\"\"\"\n        headers = {\n            'X-API-KEY': SERPER_API_KEY,\n            'Content-Type': 'application/json'\n        }\n        url = 'https://google.serper.dev/search'\n        payload = {'q': query}\n        \n        try:\n            response = requests.post(url, headers=headers, json=payload)\n            results = response.json()\n            return results.get('organic', [])[:5]  # Obtener los primeros 5 resultados\n        except Exception as e:\n            print(f\"Error en la búsqueda: {e}\")\n            return []\n\n    def extract_text(self, url: str) -> str:\n        \"\"\"Extrae el texto principal de una URL\"\"\"\n        try:\n            response = requests.get(url, timeout=5)\n            soup = BeautifulSoup(response.text, 'html.parser')\n            \n            # Eliminar scripts y estilos\n            for script in soup(['script', 'style']):\n                script.decompose()\n            \n            return soup.get_text()\n        except Exception as e:\n            print(f\"Error extrayendo texto de {url}: {e}\")\n            return \"\"\n\n    def generate_response(self, query: str, context: str) -> str:\n        \"\"\"Genera una respuesta usando OpenAI\"\"\"\n        try:\n            messages = self.conversation_history + [\n                {\"role\": \"user\", \"content\": f\"Pregunta: {query}\\nContexto de búsqueda: {context}\"}\n            ]\n            \n            response = openai.ChatCompletion.create(\n                model=\"gpt-3.5-turbo\",\n                messages=messages,\n                stream=True,\n                temperature=0.7\n            )\n            \n            # Procesar respuesta en streaming\n            full_response = \"\"\n            print(\"Chatbot: \", end=\"\", flush=True)\n            \n            for chunk in response:\n                if hasattr(chunk.choices[0].delta, 'content'):\n                    content = chunk.choices[0].delta.content\n                    if content:\n                        print(content, end=\"\", flush=True)\n                        full_response += content\n            \n            print(\"\\n\")\n            return full_response\n            \n        except Exception as e:\n            print(f\"Error generando respuesta: {e}\")\n            return \"Lo siento, hubo un error al generar la respuesta.\"\n\n    def chat(self):\n        \"\"\"Función principal del chatbot\"\"\"\n        print(\"¡Hola! Soy tu chatbot asistente. Escribe 'salir' para terminar.\")\n        \n        while True:\n            user_input = input(\"\\nTú: \")\n            if user_input.lower() == 'salir':\n                print(\"¡Hasta luego!\")\n                break\n            \n            # Guardar pregunta en el historial\n            self.conversation_history.append({\"role\": \"user\", \"content\": user_input})\n            \n            # Realizar búsqueda\n            print(\"\\n** Buscando en internet **\")\n            search_results = self.search_internet(user_input)\n            \n            # Recopilar información de las fuentes\n            context = \"\"\n            self.sources = []\n            \n            for result in search_results:\n                if 'link' in result:\n                    self.sources.append({\n                        'title': result.get('title', ''),\n                        'link': result.get('link', '')\n                    })\n                    extracted_text = self.extract_text(result['link'])\n                    context += f\"\\nFuente: {result['title']}\\n{extracted_text[:500]}\"\n            \n            # Generar y mostrar respuesta\n            response = self.generate_response(user_input, context)\n            self.conversation_history.append({\"role\": \"assistant\", \"content\": response})\n            \n            # Mostrar fuentes\n            print(\"\\nFuentes consultadas:\")\n            for source in self.sources:\n                print(f\"- {source['title']}: {source['link']}\")\n\nif __name__ == \"__main__\":\n    chatbot = Chatbot()\n    chatbot.chat()\n```\n\nExplicación detallada para Windows:\n\n1. **Preparación inicial:**\n   - Instala Python desde https://www.python.org/downloads/ (selecciona \"Add Python to PATH\" durante la instalación)\n   - Abre el CMD o PowerShell como administrador\n\n2. **Configuración del proyecto:**\n```bash\nmkdir mi_chatbot\ncd mi_chatbot\npython -m venv venv\n.\\venv\\Scripts\\activate\n```\n\n3. **Instalar dependencias:**\n```bash\npip install python-dotenv requests openai beautifulsoup4\n```\n\n4. **Crear archivo .env:**\nCrea un archivo llamado `.env` en la misma carpeta y añade tus claves API:\n```text:.env\nSERPER_API_KEY=tu_clave_de_serper_aquí\nOPENAI_API_KEY=tu_clave_de_openai_aquí\n```\n\n5. **Ejecutar el chatbot:**\n```bash\npython chatbot_completo.py\n```\n\nCaracterísticas del código:\n- Búsqueda en Google usando Serper.dev\n- Extracción de texto de páginas web\n- Respuestas en streaming usando OpenAI\n- Memoria de conversación\n- Citación de fuentes\n- Manejo de errores básico\n\nPara usar el chatbot:\n1. Escribe tu pregunta\n2. El bot buscará en internet\n3. Procesará la información\n4. Mostrará la respuesta palabra por palabra\n5. Listará las fuentes consultadas\n6. Escribe 'salir' para terminar\n\n¿Te gustaría que profundicemos en alguna parte específica del código?"
+        }
+      },
+      {
+        "humanMessage": {
+          "speaker": "human",
+          "contextFiles": [],
+          "editorState": {
+            "v": "lexical-v0",
+            "minReaderV": "lexical-v0",
+            "lexicalEditorState": {
+              "root": {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "detail": 0,
+                        "format": 0,
+                        "mode": "normal",
+                        "style": "",
+                        "text": "me marcó este error You tried to access openai.ChatCompletion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.",
+                        "type": "text",
+                        "version": 1
+                      }
+                    ],
+                    "direction": "ltr",
+                    "format": "",
+                    "indent": 0,
+                    "type": "paragraph",
+                    "version": 1,
+                    "textFormat": 0,
+                    "textStyle": ""
+                  },
+                  {
+                    "children": [],
+                    "direction": "ltr",
+                    "format": "",
+                    "indent": 0,
+                    "type": "paragraph",
+                    "version": 1,
+                    "textFormat": 0,
+                    "textStyle": ""
+                  },
+                  {
+                    "children": [
+                      {
+                        "detail": 0,
+                        "format": 0,
+                        "mode": "normal",
+                        "style": "",
+                        "text": "You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface.",
+                        "type": "text",
+                        "version": 1
+                      }
+                    ],
+                    "direction": "ltr",
+                    "format": "",
+                    "indent": 0,
+                    "type": "paragraph",
+                    "version": 1,
+                    "textFormat": 0,
+                    "textStyle": ""
+                  },
+                  {
+                    "children": [],
+                    "direction": "ltr",
+                    "format": "",
+                    "indent": 0,
+                    "type": "paragraph",
+                    "version": 1,
+                    "textFormat": 0,
+                    "textStyle": ""
+                  },
+                  {
+                    "children": [
+                      {
+                        "detail": 0,
+                        "format": 0,
+                        "mode": "normal",
+                        "style": "",
+                        "text": "Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`",
+                        "type": "text",
+                        "version": 1
+                      }
+                    ],
+                    "direction": "ltr",
+                    "format": "",
+                    "indent": 0,
+                    "type": "paragraph",
+                    "version": 1,
+                    "textFormat": 0,
+                    "textStyle": ""
+                  },
+                  {
+                    "children": [],
+                    "direction": "ltr",
+                    "format": "",
+                    "indent": 0,
+                    "type": "paragraph",
+                    "version": 1,
+                    "textFormat": 0,
+                    "textStyle": ""
+                  },
+                  {
+                    "children": [
+                      {
+                        "detail": 0,
+                        "format": 0,
+                        "mode": "normal",
+                        "style": "",
+                        "text": "A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742",
+                        "type": "text",
+                        "version": 1
+                      }
+                    ],
+                    "direction": "ltr",
+                    "format": "",
+                    "indent": 0,
+                    "type": "paragraph",
+                    "version": 1,
+                    "textFormat": 0,
+                    "textStyle": ""
+                  }
+                ],
+                "direction": "ltr",
+                "format": "",
+                "indent": 0,
+                "type": "root",
+                "version": 1
+              }
+            }
+          },
+          "text": "me marcó este error You tried to access openai.ChatCompletion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.\n\n\n\nYou can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface.\n\n\n\nAlternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`\n\n\n\nA detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742"
+        },
+        "assistantMessage": {
+          "speaker": "assistant",
+          "model": "anthropic::2024-10-22::claude-3-5-sonnet-latest",
+          "text": "¡Excelente observación! Vamos a actualizar el código para usar la última versión de la API de OpenAI. Aquí está la versión actualizada de la función `generate_response`:\n\n```python:chatbot_completo.py\nfrom openai import OpenAI\n\n# En la clase Chatbot, actualiza el __init__\ndef __init__(self):\n    self.conversation_history = []\n    self.sources = []\n    self.client = OpenAI(api_key=OPENAI_API_KEY)\n\n# Reemplaza la función generate_response con esta versión actualizada\ndef generate_response(self, query: str, context: str) -> str:\n    \"\"\"Genera una respuesta usando OpenAI\"\"\"\n    try:\n        messages = self.conversation_history + [\n            {\"role\": \"user\", \"content\": f\"Pregunta: {query}\\nContexto de búsqueda: {context}\"}\n        ]\n        \n        stream = self.client.chat.completions.create(\n            model=\"gpt-3.5-turbo\",\n            messages=messages,\n            stream=True,\n            temperature=0.7\n        )\n        \n        # Procesar respuesta en streaming\n        full_response = \"\"\n        print(\"Chatbot: \", end=\"\", flush=True)\n        \n        for chunk in stream:\n            if chunk.choices[0].delta.content is not None:\n                content = chunk.choices[0].delta.content\n                print(content, end=\"\", flush=True)\n                full_response += content\n        \n        print(\"\\n\")\n        return full_response\n        \n    except Exception as e:\n        print(f\"Error generando respuesta: {e}\")\n        return \"Lo siento, hubo un error al generar la respuesta.\"\n```\n\nPara implementar estos cambios:\n\n1. Primero, actualiza la librería de OpenAI:\n```bash\npip install --upgrade openai\n```\n\n2. Copia y pega el código actualizado en tu archivo.\n\nEstos cambios reflejan la nueva sintaxis de OpenAI API v1.0.0, que incluye:\n- Uso del cliente OpenAI\n- Nueva estructura para el streaming\n- Manejo actualizado de las respuestas\n\n¿Te gustaría que exploremos más funcionalidades de la nueva versión de la API?"
+        }
+      },
+      {
+        "humanMessage": {
+          "speaker": "human",
+          "contextFiles": [],
+          "editorState": {
+            "v": "lexical-v0",
+            "minReaderV": "lexical-v0",
+            "lexicalEditorState": {
+              "root": {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "detail": 0,
+                        "format": 0,
+                        "mode": "normal",
+                        "style": "",
+                        "text": "dame todo el código del archivo chatbot",
+                        "type": "text",
+                        "version": 1
+                      }
+                    ],
+                    "direction": "ltr",
+                    "format": "",
+                    "indent": 0,
+                    "type": "paragraph",
+                    "version": 1,
+                    "textFormat": 0,
+                    "textStyle": ""
+                  }
+                ],
+                "direction": "ltr",
+                "format": "",
+                "indent": 0,
+                "type": "root",
+                "version": 1
+              }
+            }
+          },
+          "text": "dame todo el código del archivo chatbot"
+        },
+        "assistantMessage": {
+          "speaker": "assistant",
+          "model": "anthropic::2024-10-22::claude-3-5-sonnet-latest",
+          "text": "¡Por supuesto! Aquí tienes el código completo y actualizado del chatbot:\n\n```python:chatbot_completo.py\nimport os\nimport requests\nfrom openai import OpenAI\nfrom bs4 import BeautifulSoup\nfrom dotenv import load_dotenv\nfrom typing import List, Dict\n\n# Cargar variables de entorno\nload_dotenv()\n\n# Configuración de APIs\nSERPER_API_KEY = os.getenv('SERPER_API_KEY')\nOPENAI_API_KEY = os.getenv('OPENAI_API_KEY')\n\nclass Chatbot:\n    def __init__(self):\n        self.conversation_history = []\n        self.sources = []\n        self.client = OpenAI(api_key=OPENAI_API_KEY)\n\n    def search_internet(self, query: str) -> List[Dict]:\n        \"\"\"Realiza búsqueda en Google usando Serper API\"\"\"\n        headers = {\n            'X-API-KEY': SERPER_API_KEY,\n            'Content-Type': 'application/json'\n        }\n        url = 'https://google.serper.dev/search'\n        payload = {'q': query}\n        \n        try:\n            response = requests.post(url, headers=headers, json=payload)\n            results = response.json()\n            return results.get('organic', [])[:5]  # Obtener los primeros 5 resultados\n        except Exception as e:\n            print(f\"Error en la búsqueda: {e}\")\n            return []\n\n    def extract_text(self, url: str) -> str:\n        \"\"\"Extrae el texto principal de una URL\"\"\"\n        try:\n            response = requests.get(url, timeout=5)\n            soup = BeautifulSoup(response.text, 'html.parser')\n            \n            # Eliminar scripts y estilos\n            for script in soup(['script', 'style']):\n                script.decompose()\n            \n            return soup.get_text()\n        except Exception as e:\n            print(f\"Error extrayendo texto de {url}: {e}\")\n            return \"\"\n\n    def generate_response(self, query: str, context: str) -> str:\n        \"\"\"Genera una respuesta usando OpenAI\"\"\"\n        try:\n            messages = self.conversation_history + [\n                {\"role\": \"user\", \"content\": f\"Pregunta: {query}\\nContexto de búsqueda: {context}\"}\n            ]\n            \n            stream = self.client.chat.completions.create(\n                model=\"gpt-3.5-turbo\",\n                messages=messages,\n                stream=True,\n                temperature=0.7\n            )\n            \n            # Procesar respuesta en streaming\n            full_response = \"\"\n            print(\"Chatbot: \", end=\"\", flush=True)\n            \n            for chunk in stream:\n                if chunk.choices[0].delta.content is not None:\n                    content = chunk.choices[0].delta.content\n                    print(content, end=\"\", flush=True)\n                    full_response += content\n            \n            print(\"\\n\")\n            return full_response\n            \n        except Exception as e:\n            print(f\"Error generando respuesta: {e}\")\n            return \"Lo siento, hubo un error al generar la respuesta.\"\n\n    def chat(self):\n        \"\"\"Función principal del chatbot\"\"\"\n        print(\"¡Hola! Soy tu chatbot asistente. Escribe 'salir' para terminar.\")\n        \n        while True:\n            user_input = input(\"\\nTú: \")\n            if user_input.lower() == 'salir':\n                print(\"¡Hasta luego!\")\n                break\n            \n            # Guardar pregunta en el historial\n            self.conversation_history.append({\"role\": \"user\", \"content\": user_input})\n            \n            # Realizar búsqueda\n            print(\"\\n** Buscando en internet **\")\n            search_results = self.search_internet(user_input)\n            \n            # Recopilar información de las fuentes\n            context = \"\"\n            self.sources = []\n            \n            for result in search_results:\n                if 'link' in result:\n                    self.sources.append({\n                        'title': result.get('title', ''),\n                        'link': result.get('link', '')\n                    })\n                    extracted_text = self.extract_text(result['link'])\n                    context += f\"\\nFuente: {result['title']}\\n{extracted_text[:500]}\"\n            \n            # Generar y mostrar respuesta\n            response = self.generate_response(user_input, context)\n            self.conversation_history.append({\"role\": \"assistant\", \"content\": response})\n            \n            # Mostrar fuentes\n            print(\"\\nFuentes consultadas:\")\n            for source in self.sources:\n                print(f\"- {source['title']}: {source['link']}\")\n\nif __name__ == \"__main__\":\n    chatbot = Chatbot()\n    chatbot.chat()\n```\n\nEste código incluye todas las funcionalidades requeridas:\n- Búsqueda en internet usando Serper.dev\n- Extracción de texto de páginas web\n- Integración con OpenAI API v1.0.0\n- Respuestas en streaming\n- Memoria de conversación\n- Citación de fuentes\n\n¿Necesitas ayuda con alguna parte específica del código?"
+        }
+      },
+      {
+        "humanMessage": {
+          "speaker": "human",
+          "contextFiles": [],
+          "editorState": {
+            "v": "lexical-v0",
+            "minReaderV": "lexical-v0",
+            "lexicalEditorState": {
+              "root": {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "detail": 0,
+                        "format": 0,
+                        "mode": "normal",
+                        "style": "",
+                        "text": "me marcó este error File \"C:\\Users\\davida\\Documents\\Proyectos\\Henry\\HW_C8\\CAP08_DAVID_ANGELES\\solucion\\chatbot.py\", line 124, in <module>",
+                        "type": "text",
+                        "version": 1
+                      }
+                    ],
+                    "direction": "ltr",
+                    "format": "",
+                    "indent": 0,
+                    "type": "paragraph",
+                    "version": 1,
+                    "textFormat": 0,
+                    "textStyle": ""
+                  },
+                  {
+                    "children": [
+                      {
+                        "detail": 0,
+                        "format": 0,
+                        "mode": "normal",
+                        "style": "",
+                        "text": "    chatbot = Chatbot()",
+                        "type": "text",
+                        "version": 1
+                      }
+                    ],
+                    "direction": "ltr",
+                    "format": "",
+                    "indent": 0,
+                    "type": "paragraph",
+                    "version": 1,
+                    "textFormat": 0,
+                    "textStyle": ""
+                  },
+                  {
+                    "children": [
+                      {
+                        "detail": 0,
+                        "format": 0,
+                        "mode": "normal",
+                        "style": "",
+                        "text": "  File \"C:\\Users\\davida\\Documents\\Proyectos\\Henry\\HW_C8\\CAP08_DAVID_ANGELES\\solucion\\chatbot.py\", line 19, in __init__    self.client = OpenAI(api_key=OPENAI_API_KEY)",
+                        "type": "text",
+                        "version": 1
+                      }
+                    ],
+                    "direction": "ltr",
+                    "format": "",
+                    "indent": 0,
+                    "type": "paragraph",
+                    "version": 1,
+                    "textFormat": 0,
+                    "textStyle": ""
+                  },
+                  {
+                    "children": [
+                      {
+                        "detail": 0,
+                        "format": 0,
+                        "mode": "normal",
+                        "style": "",
+                        "text": "                  ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^",
+                        "type": "text",
+                        "version": 1
+                      }
+                    ],
+                    "direction": null,
+                    "format": "",
+                    "indent": 0,
+                    "type": "paragraph",
+                    "version": 1,
+                    "textFormat": 0,
+                    "textStyle": ""
+                  },
+                  {
+                    "children": [
+                      {
+                        "detail": 0,
+                        "format": 0,
+                        "mode": "normal",
+                        "style": "",
+                        "text": "  File \"C:\\Users\\davida\\Documents\\Proyectos\\Henry\\HW_C8\\CAP08_DAVID_ANGELES\\solucion\\venv\\Lib\\site-packages\\openai\\_client.py\", line 105, in __init__",
+                        "type": "text",
+                        "version": 1
+                      }
+                    ],
+                    "direction": "ltr",
+                    "format": "",
+                    "indent": 0,
+                    "type": "paragraph",
+                    "version": 1,
+                    "textFormat": 0,
+                    "textStyle": ""
+                  },
+                  {
+                    "children": [
+                      {
+                        "detail": 0,
+                        "format": 0,
+                        "mode": "normal",
+                        "style": "",
+                        "text": "    raise OpenAIError(",
+                        "type": "text",
+                        "version": 1
+                      }
+                    ],
+                    "direction": "ltr",
+                    "format": "",
+                    "indent": 0,
+                    "type": "paragraph",
+                    "version": 1,
+                    "textFormat": 0,
+                    "textStyle": ""
+                  },
+                  {
+                    "children": [
+                      {
+                        "detail": 0,
+                        "format": 0,
+                        "mode": "normal",
+                        "style": "",
+                        "text": "        \"The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable\"",
+                        "type": "text",
+                        "version": 1
+                      }
+                    ],
+                    "direction": "ltr",
+                    "format": "",
+                    "indent": 0,
+                    "type": "paragraph",
+                    "version": 1,
+                    "textFormat": 0,
+                    "textStyle": ""
+                  },
+                  {
+                    "children": [
+                      {
+                        "detail": 0,
+                        "format": 0,
+                        "mode": "normal",
+                        "style": "",
+                        "text": "    )",
+                        "type": "text",
+                        "version": 1
+                      }
+                    ],
+                    "direction": null,
+                    "format": "",
+                    "indent": 0,
+                    "type": "paragraph",
+                    "version": 1,
+                    "textFormat": 0,
+                    "textStyle": ""
+                  },
+                  {
+                    "children": [
+                      {
+                        "detail": 0,
+                        "format": 0,
+                        "mode": "normal",
+                        "style": "",
+                        "text": "openai.OpenAIError: The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable",
+                        "type": "text",
+                        "version": 1
+                      }
+                    ],
+                    "direction": "ltr",
+                    "format": "",
+                    "indent": 0,
+                    "type": "paragraph",
+                    "version": 1,
+                    "textFormat": 0,
+                    "textStyle": ""
+                  }
+                ],
+                "direction": "ltr",
+                "format": "",
+                "indent": 0,
+                "type": "root",
+                "version": 1
+              }
+            }
+          },
+          "text": "me marcó este error File \"C:\\Users\\davida\\Documents\\Proyectos\\Henry\\HW_C8\\CAP08_DAVID_ANGELES\\solucion\\chatbot.py\", line 124, in <module>\n\n    chatbot = Chatbot()\n\n  File \"C:\\Users\\davida\\Documents\\Proyectos\\Henry\\HW_C8\\CAP08_DAVID_ANGELES\\solucion\\chatbot.py\", line 19, in __init__    self.client = OpenAI(api_key=OPENAI_API_KEY)\n\n                  ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^\n\n  File \"C:\\Users\\davida\\Documents\\Proyectos\\Henry\\HW_C8\\CAP08_DAVID_ANGELES\\solucion\\venv\\Lib\\site-packages\\openai\\_client.py\", line 105, in __init__\n\n    raise OpenAIError(\n\n        \"The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable\"\n\n    )\n\nopenai.OpenAIError: The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable"
+        },
+        "assistantMessage": {
+          "speaker": "assistant",
+          "model": "anthropic::2024-10-22::claude-3-5-sonnet-latest",
+          "text": "¡El error tiene una solución sencilla! El problema es que no se está encontrando la API key de OpenAI. Necesitamos asegurarnos que el archivo `.env` esté correctamente configurado.\n\nSigue estos pasos:\n\n1. Crea un archivo `.env` en la misma carpeta que tu script:\n```text:.env\nOPENAI_API_KEY=tu-api-key-de-openai\nSERPER_API_KEY=tu-api-key-de-serper\n```\n\n2. Verifica que el archivo `.env` está en la ubicación correcta:\n```bash\ndir .env\n```\n\n3. Asegúrate que has obtenido tu API key de OpenAI desde:\nhttps://platform.openai.com/api-keys\n\n4. Para verificar que las variables de entorno se están cargando, puedes añadir este código de diagnóstico al inicio de tu script:\n```python:chatbot.py\nprint(f\"OPENAI_API_KEY: {'Configurada' if OPENAI_API_KEY else 'No configurada'}\")\n```\n\n¿Te gustaría que revisemos juntos la configuración del archivo `.env`?"
+        }
+      },
+      {
+        "humanMessage": {
+          "speaker": "human",
+          "contextFiles": [],
+          "editorState": {
+            "v": "lexical-v0",
+            "minReaderV": "lexical-v0",
+            "lexicalEditorState": {
+              "root": {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "detail": 0,
+                        "format": 0,
+                        "mode": "normal",
+                        "style": "",
+                        "text": "Ahora genera las pruebas unitarias",
+                        "type": "text",
+                        "version": 1
+                      }
+                    ],
+                    "direction": "ltr",
+                    "format": "",
+                    "indent": 0,
+                    "type": "paragraph",
+                    "version": 1,
+                    "textFormat": 0,
+                    "textStyle": ""
+                  }
+                ],
+                "direction": "ltr",
+                "format": "",
+                "indent": 0,
+                "type": "root",
+                "version": 1
+              }
+            }
+          },
+          "text": "Ahora genera las pruebas unitarias"
+        },
+        "assistantMessage": {
+          "speaker": "assistant",
+          "model": "anthropic::2024-10-22::claude-3-5-sonnet-latest",
+          "text": "¡Excelente! Aquí tienes el código para las pruebas unitarias del chatbot:\n\n```python:test_chatbot.py\nimport pytest\nfrom unittest.mock import Mock, patch\nfrom chatbot import Chatbot\n\n@pytest.fixture\ndef chatbot():\n    return Chatbot()\n\ndef test_chatbot_initialization(chatbot):\n    \"\"\"Prueba la inicialización correcta del chatbot\"\"\"\n    assert chatbot.conversation_history == []\n    assert chatbot.sources == []\n    assert chatbot.client is not None\n\n@patch('requests.post')\ndef test_search_internet(mock_post, chatbot):\n    \"\"\"Prueba la funcionalidad de búsqueda en internet\"\"\"\n    # Simular respuesta de Serper\n    mock_response = Mock()\n    mock_response.json.return_value = {\n        'organic': [\n            {'title': 'Test Title', 'link': 'http://test.com'},\n            {'title': 'Test Title 2', 'link': 'http://test2.com'}\n        ]\n    }\n    mock_post.return_value = mock_response\n\n    results = chatbot.search_internet(\"test query\")\n    assert len(results) == 2\n    assert results[0]['title'] == 'Test Title'\n    assert results[0]['link'] == 'http://test.com'\n\n@patch('requests.get')\ndef test_extract_text(mock_get, chatbot):\n    \"\"\"Prueba la extracción de texto de una URL\"\"\"\n    mock_response = Mock()\n    mock_response.text = \"\"\"\n    <html>\n        <body>\n            <script>JavaScript code</script>\n            <p>Contenido de prueba</p>\n        </body>\n    </html>\n    \"\"\"\n    mock_get.return_value = mock_response\n\n    text = chatbot.extract_text(\"http://test.com\")\n    assert \"Contenido de prueba\" in text\n    assert \"JavaScript code\" not in text\n\n@patch('openai.OpenAI')\ndef test_generate_response(mock_openai, chatbot):\n    \"\"\"Prueba la generación de respuestas\"\"\"\n    # Simular respuesta de OpenAI\n    mock_completion = Mock()\n    mock_chunk = Mock()\n    mock_chunk.choices = [Mock()]\n    mock_chunk.choices[0].delta.content = \"Respuesta de prueba\"\n    mock_completion.return_value = [mock_chunk]\n    \n    mock_client = Mock()\n    mock_client.chat.completions.create.return_value = mock_completion\n    chatbot.client = mock_client\n\n    response = chatbot.generate_response(\"test query\", \"test context\")\n    assert \"Respuesta de prueba\" in response\n\ndef test_conversation_history(chatbot):\n    \"\"\"Prueba el manejo del historial de conversación\"\"\"\n    with patch.object(chatbot, 'generate_response', return_value=\"Test response\"):\n        with patch.object(chatbot, 'search_internet', return_value=[]):\n            # Simular una conversación\n            chatbot.conversation_history.append({\"role\": \"user\", \"content\": \"test question\"})\n            chatbot.conversation_history.append({\"role\": \"assistant\", \"content\": \"test answer\"})\n            \n            assert len(chatbot.conversation_history) == 2\n            assert chatbot.conversation_history[0][\"role\"] == \"user\"\n            assert chatbot.conversation_history[1][\"role\"] == \"assistant\"\n\ndef test_sources_management(chatbot):\n    \"\"\"Prueba el manejo de fuentes\"\"\"\n    test_sources = [\n        {'title': 'Test Source 1', 'link': 'http://test1.com'},\n        {'title': 'Test Source 2', 'link': 'http://test2.com'}\n    ]\n    chatbot.sources = test_sources\n\n    assert len(chatbot.sources) == 2\n    assert chatbot.sources[0]['title'] == 'Test Source 1'\n    assert chatbot.sources[1]['link'] == 'http://test2.com'\n```\n\nPara ejecutar las pruebas:\n\n```bash\npip install pytest pytest-mock\npytest test_chatbot.py -v\n```\n\nEstas pruebas verifican:\n- Inicialización correcta del chatbot\n- Funcionalidad de búsqueda en internet\n- Extracción de texto de URLs\n- Generación de respuestas con OpenAI\n- Manejo del historial de conversación\n- Gestión de fuentes\n\n¿Te gustaría que profundicemos en alguna prueba específica?"
+        }
+      },
+      {
+        "humanMessage": {
+          "speaker": "human",
+          "contextFiles": [],
+          "editorState": {
+            "v": "lexical-v0",
+            "minReaderV": "lexical-v0",
+            "lexicalEditorState": {
+              "root": {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "detail": 0,
+                        "format": 0,
+                        "mode": "normal",
+                        "style": "",
+                        "text": "Me marcó este error en las pruebas unitarias ______________________________________________ test_generate_response _______________________________________________ ",
+                        "type": "text",
+                        "version": 1
+                      }
+                    ],
+                    "direction": "ltr",
+                    "format": "",
+                    "indent": 0,
+                    "type": "paragraph",
+                    "version": 1,
+                    "textFormat": 0,
+                    "textStyle": ""
+                  },
+                  {
+                    "children": [],
+                    "direction": "ltr",
+                    "format": "",
+                    "indent": 0,
+                    "type": "paragraph",
+                    "version": 1,
+                    "textFormat": 0,
+                    "textStyle": ""
+                  },
+                  {
+                    "children": [
+                      {
+                        "detail": 0,
+                        "format": 0,
+                        "mode": "normal",
+                        "style": "",
+                        "text": "mock_openai = <MagicMock name='OpenAI' id='1928606767760'>, chatbot = <chatbot.Chatbot object at 0x000001C109FFE650>  ",
+                        "type": "text",
+                        "version": 1
+                      }
+                    ],
+                    "direction": "ltr",
+                    "format": "",
+                    "indent": 0,
+                    "type": "paragraph",
+                    "version": 1,
+                    "textFormat": 0,
+                    "textStyle": ""
+                  },
+                  {
+                    "children": [],
+                    "direction": "ltr",
+                    "format": "",
+                    "indent": 0,
+                    "type": "paragraph",
+                    "version": 1,
+                    "textFormat": 0,
+                    "textStyle": ""
+                  },
+                  {
+                    "children": [
+                      {
+                        "detail": 0,
+                        "format": 0,
+                        "mode": "normal",
+                        "style": "",
+                        "text": "    @patch('openai.OpenAI')",
+                        "type": "text",
+                        "version": 1
+                      }
+                    ],
+                    "direction": "ltr",
+                    "format": "",
+                    "indent": 0,
+                    "type": "paragraph",
+                    "version": 1,
+                    "textFormat": 0,
+                    "textStyle": ""
+                  },
+                  {
+                    "children": [
+                      {
+                        "detail": 0,
+                        "format": 0,
+                        "mode": "normal",
+                        "style": "",
+                        "text": "    def test_generate_response(mock_openai, chatbot):",
+                        "type": "text",
+                        "version": 1
+                      }
+                    ],
+                    "direction": "ltr",
+                    "format": "",
+                    "indent": 0,
+                    "type": "paragraph",
+                    "version": 1,
+                    "textFormat": 0,
+                    "textStyle": ""
+                  },
+                  {
+                    "children": [
+                      {
+                        "detail": 0,
+                        "format": 0,
+                        "mode": "normal",
+                        "style": "",
+                        "text": "        \"\"\"Prueba la generación de respuestas\"\"\"",
+                        "type": "text",
+                        "version": 1
+                      }
+                    ],
+                    "direction": "ltr",
+                    "format": "",
+                    "indent": 0,
+                    "type": "paragraph",
+                    "version": 1,
+                    "textFormat": 0,
+                    "textStyle": ""
+                  },
+                  {
+                    "children": [
+                      {
+                        "detail": 0,
+                        "format": 0,
+                        "mode": "normal",
+                        "style": "",
+                        "text": "        # Simular respuesta de OpenAI",
+                        "type": "text",
+                        "version": 1
+                      }
+                    ],
+                    "direction": "ltr",
+                    "format": "",
+                    "indent": 0,
+                    "type": "paragraph",
+                    "version": 1,
+                    "textFormat": 0,
+                    "textStyle": ""
+                  },
+                  {
+                    "children": [
+                      {
+                        "detail": 0,
+                        "format": 0,
+                        "mode": "normal",
+                        "style": "",
+                        "text": "        mock_completion = Mock()",
+                        "type": "text",
+                        "version": 1
+                      }
+                    ],
+                    "direction": "ltr",
+                    "format": "",
+                    "indent": 0,
+                    "type": "paragraph",
+                    "version": 1,
+                    "textFormat": 0,
+                    "textStyle": ""
+                  },
+                  {
+                    "children": [
+                      {
+                        "detail": 0,
+                        "format": 0,
+                        "mode": "normal",
+                        "style": "",
+                        "text": "        mock_chunk = Mock()",
+                        "type": "text",
+                        "version": 1
+                      }
+                    ],
+                    "direction": "ltr",
+                    "format": "",
+                    "indent": 0,
+                    "type": "paragraph",
+                    "version": 1,
+                    "textFormat": 0,
+                    "textStyle": ""
+                  },
+                  {
+                    "children": [
+                      {
+                        "detail": 0,
+                        "format": 0,
+                        "mode": "normal",
+                        "style": "",
+                        "text": "        mock_chunk.choices = [Mock()]",
+                        "type": "text",
+                        "version": 1
+                      }
+                    ],
+                    "direction": "ltr",
+                    "format": "",
+                    "indent": 0,
+                    "type": "paragraph",
+                    "version": 1,
+                    "textFormat": 0,
+                    "textStyle": ""
+                  },
+                  {
+                    "children": [
+                      {
+                        "detail": 0,
+                        "format": 0,
+                        "mode": "normal",
+                        "style": "",
+                        "text": "        mock_chunk.choices[0].delta.content = \"Respuesta de prueba\"",
+                        "type": "text",
+                        "version": 1
+                      }
+                    ],
+                    "direction": "ltr",
+                    "format": "",
+                    "indent": 0,
+                    "type": "paragraph",
+                    "version": 1,
+                    "textFormat": 0,
+                    "textStyle": ""
+                  },
+                  {
+                    "children": [
+                      {
+                        "detail": 0,
+                        "format": 0,
+                        "mode": "normal",
+                        "style": "",
+                        "text": "        mock_completion.return_value = [mock_chunk]",
+                        "type": "text",
+                        "version": 1
+                      }
+                    ],
+                    "direction": "ltr",
+                    "format": "",
+                    "indent": 0,
+                    "type": "paragraph",
+                    "version": 1,
+                    "textFormat": 0,
+                    "textStyle": ""
+                  },
+                  {
+                    "children": [],
+                    "direction": "ltr",
+                    "format": "",
+                    "indent": 0,
+                    "type": "paragraph",
+                    "version": 1,
+                    "textFormat": 0,
+                    "textStyle": ""
+                  },
+                  {
+                    "children": [
+                      {
+                        "detail": 0,
+                        "format": 0,
+                        "mode": "normal",
+                        "style": "",
+                        "text": "        mock_client = Mock()",
+                        "type": "text",
+                        "version": 1
+                      }
+                    ],
+                    "direction": "ltr",
+                    "format": "",
+                    "indent": 0,
+                    "type": "paragraph",
+                    "version": 1,
+                    "textFormat": 0,
+                    "textStyle": ""
+                  },
+                  {
+                    "children": [
+                      {
+                        "detail": 0,
+                        "format": 0,
+                        "mode": "normal",
+                        "style": "",
+                        "text": "        mock_client.chat.completions.create.return_value = mock_completion",
+                        "type": "text",
+                        "version": 1
+                      }
+                    ],
+                    "direction": "ltr",
+                    "format": "",
+                    "indent": 0,
+                    "type": "paragraph",
+                    "version": 1,
+                    "textFormat": 0,
+                    "textStyle": ""
+                  },
+                  {
+                    "children": [
+                      {
+                        "detail": 0,
+                        "format": 0,
+                        "mode": "normal",
+                        "style": "",
+                        "text": "        chatbot.client = mock_client",
+                        "type": "text",
+                        "version": 1
+                      }
+                    ],
+                    "direction": "ltr",
+                    "format": "",
+                    "indent": 0,
+                    "type": "paragraph",
+                    "version": 1,
+                    "textFormat": 0,
+                    "textStyle": ""
+                  },
+                  {
+                    "children": [],
+                    "direction": "ltr",
+                    "format": "",
+                    "indent": 0,
+                    "type": "paragraph",
+                    "version": 1,
+                    "textFormat": 0,
+                    "textStyle": ""
+                  },
+                  {
+                    "children": [
+                      {
+                        "detail": 0,
+                        "format": 0,
+                        "mode": "normal",
+                        "style": "",
+                        "text": "        response = chatbot.generate_response(\"test query\", \"test context\")",
+                        "type": "text",
+                        "version": 1
+                      }
+                    ],
+                    "direction": "ltr",
+                    "format": "",
+                    "indent": 0,
+                    "type": "paragraph",
+                    "version": 1,
+                    "textFormat": 0,
+                    "textStyle": ""
+                  },
+                  {
+                    "children": [
+                      {
+                        "detail": 0,
+                        "format": 0,
+                        "mode": "normal",
+                        "style": "",
+                        "text": ">       assert \"Respuesta de prueba\" in response",
+                        "type": "text",
+                        "version": 1
+                      }
+                    ],
+                    "direction": "ltr",
+                    "format": "",
+                    "indent": 0,
+                    "type": "paragraph",
+                    "version": 1,
+                    "textFormat": 0,
+                    "textStyle": ""
+                  },
+                  {
+                    "children": [
+                      {
+                        "detail": 0,
+                        "format": 0,
+                        "mode": "normal",
+                        "style": "",
+                        "text": "E       AssertionError: assert 'Respuesta de prueba' in 'Lo siento, hubo un error al generar la respuesta.'",
+                        "type": "text",
+                        "version": 1
+                      }
+                    ],
+                    "direction": "ltr",
+                    "format": "",
+                    "indent": 0,
+                    "type": "paragraph",
+                    "version": 1,
+                    "textFormat": 0,
+                    "textStyle": ""
+                  },
+                  {
+                    "children": [],
+                    "direction": "ltr",
+                    "format": "",
+                    "indent": 0,
+                    "type": "paragraph",
+                    "version": 1,
+                    "textFormat": 0,
+                    "textStyle": ""
+                  },
+                  {
+                    "children": [
+                      {
+                        "detail": 0,
+                        "format": 0,
+                        "mode": "normal",
+                        "style": "",
+                        "text": "test_chatbot.py:66: AssertionError",
+                        "type": "text",
+                        "version": 1
+                      }
+                    ],
+                    "direction": "ltr",
+                    "format": "",
+                    "indent": 0,
+                    "type": "paragraph",
+                    "version": 1,
+                    "textFormat": 0,
+                    "textStyle": ""
+                  },
+                  {
+                    "children": [
+                      {
+                        "detail": 0,
+                        "format": 0,
+                        "mode": "normal",
+                        "style": "",
+                        "text": "----------------------------------------------- Captured stdout call ------------------------------------------------ ",
+                        "type": "text",
+                        "version": 1
+                      }
+                    ],
+                    "direction": "ltr",
+                    "format": "",
+                    "indent": 0,
+                    "type": "paragraph",
+                    "version": 1,
+                    "textFormat": 0,
+                    "textStyle": ""
+                  },
+                  {
+                    "children": [
+                      {
+                        "detail": 0,
+                        "format": 0,
+                        "mode": "normal",
+                        "style": "",
+                        "text": "Chatbot: Error generando respuesta: 'Mock' object is not iterable",
+                        "type": "text",
+                        "version": 1
+                      }
+                    ],
+                    "direction": "ltr",
+                    "format": "",
+                    "indent": 0,
+                    "type": "paragraph",
+                    "version": 1,
+                    "textFormat": 0,
+                    "textStyle": ""
+                  },
+                  {
+                    "children": [
+                      {
+                        "detail": 0,
+                        "format": 0,
+                        "mode": "normal",
+                        "style": "",
+                        "text": "============================================== short test summary info ==============================================",
+                        "type": "text",
+                        "version": 1
+                      }
+                    ],
+                    "direction": "ltr",
+                    "format": "",
+                    "indent": 0,
+                    "type": "paragraph",
+                    "version": 1,
+                    "textFormat": 0,
+                    "textStyle": ""
+                  },
+                  {
+                    "children": [
+                      {
+                        "detail": 0,
+                        "format": 0,
+                        "mode": "normal",
+                        "style": "",
+                        "text": "FAILED test_chatbot.py::test_generate_response - AssertionError: assert 'Respuesta de prueba' in 'Lo siento, hubo un error al generar la respuesta.'",
+                        "type": "text",
+                        "version": 1
+                      }
+                    ],
+                    "direction": "ltr",
+                    "format": "",
+                    "indent": 0,
+                    "type": "paragraph",
+                    "version": 1,
+                    "textFormat": 0,
+                    "textStyle": ""
+                  },
+                  {
+                    "children": [
+                      {
+                        "detail": 0,
+                        "format": 0,
+                        "mode": "normal",
+                        "style": "",
+                        "text": "============================================ 1 failed, 5 passed in 4.54s ============================================",
+                        "type": "text",
+                        "version": 1
+                      }
+                    ],
+                    "direction": "ltr",
+                    "format": "",
+                    "indent": 0,
+                    "type": "paragraph",
+                    "version": 1,
+                    "textFormat": 0,
+                    "textStyle": ""
+                  }
+                ],
+                "direction": "ltr",
+                "format": "",
+                "indent": 0,
+                "type": "root",
+                "version": 1
+              }
+            }
+          },
+          "text": "Me marcó este error en las pruebas unitarias ______________________________________________ test_generate_response _______________________________________________ \n\n\n\nmock_openai = <MagicMock name='OpenAI' id='1928606767760'>, chatbot = <chatbot.Chatbot object at 0x000001C109FFE650>  \n\n\n\n    @patch('openai.OpenAI')\n\n    def test_generate_response(mock_openai, chatbot):\n\n        \"\"\"Prueba la generación de respuestas\"\"\"\n\n        # Simular respuesta de OpenAI\n\n        mock_completion = Mock()\n\n        mock_chunk = Mock()\n\n        mock_chunk.choices = [Mock()]\n\n        mock_chunk.choices[0].delta.content = \"Respuesta de prueba\"\n\n        mock_completion.return_value = [mock_chunk]\n\n\n\n        mock_client = Mock()\n\n        mock_client.chat.completions.create.return_value = mock_completion\n\n        chatbot.client = mock_client\n\n\n\n        response = chatbot.generate_response(\"test query\", \"test context\")\n\n>       assert \"Respuesta de prueba\" in response\n\nE       AssertionError: assert 'Respuesta de prueba' in 'Lo siento, hubo un error al generar la respuesta.'\n\n\n\ntest_chatbot.py:66: AssertionError\n\n----------------------------------------------- Captured stdout call ------------------------------------------------ \n\nChatbot: Error generando respuesta: 'Mock' object is not iterable\n\n============================================== short test summary info ==============================================\n\nFAILED test_chatbot.py::test_generate_response - AssertionError: assert 'Respuesta de prueba' in 'Lo siento, hubo un error al generar la respuesta.'\n\n============================================ 1 failed, 5 passed in 4.54s ============================================"
+        },
+        "assistantMessage": {
+          "speaker": "assistant",
+          "model": "anthropic::2024-10-22::claude-3-5-sonnet-latest",
+          "text": "¡Vamos a corregir la prueba unitaria! El error ocurre porque la simulación del streaming de OpenAI no está correctamente configurada. Aquí está la versión corregida de la prueba:\n\n```python:test_chatbot.py\n@patch('openai.OpenAI')\ndef test_generate_response(mock_openai, chatbot):\n    \"\"\"Prueba la generación de respuestas\"\"\"\n    # Crear una lista de chunks para simular el streaming\n    mock_chunks = []\n    mock_chunk = Mock()\n    mock_choice = Mock()\n    mock_delta = Mock()\n    mock_delta.content = \"Respuesta de prueba\"\n    mock_choice.delta = mock_delta\n    mock_chunk.choices = [mock_choice]\n    mock_chunks.append(mock_chunk)\n\n    # Configurar el mock del cliente\n    mock_client = Mock()\n    mock_client.chat.completions.create.return_value = mock_chunks\n    chatbot.client = mock_client\n\n    response = chatbot.generate_response(\"test query\", \"test context\")\n    assert \"Respuesta de prueba\" in response\n```\n\nLos cambios principales son:\n- Creación correcta de la estructura de objetos mock\n- Simulación adecuada del formato de respuesta de streaming de OpenAI\n- Configuración apropiada de los atributos delta y content\n\n¿Te gustaría que revisemos las otras pruebas también?"
+        }
+      },
+      {
+        "humanMessage": {
+          "speaker": "human",
+          "contextFiles": [],
+          "editorState": {
+            "v": "lexical-v0",
+            "minReaderV": "lexical-v0",
+            "lexicalEditorState": {
+              "root": {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "detail": 0,
+                        "format": 0,
+                        "mode": "normal",
+                        "style": "",
+                        "text": "volvío a fallar",
+                        "type": "text",
+                        "version": 1
+                      }
+                    ],
+                    "direction": "ltr",
+                    "format": "",
+                    "indent": 0,
+                    "type": "paragraph",
+                    "version": 1,
+                    "textFormat": 0,
+                    "textStyle": ""
+                  }
+                ],
+                "direction": "ltr",
+                "format": "",
+                "indent": 0,
+                "type": "root",
+                "version": 1
+              }
+            }
+          },
+          "text": "volvío a fallar"
+        },
+        "assistantMessage": {
+          "speaker": "assistant",
+          "model": "anthropic::2024-10-22::claude-3-5-sonnet-latest",
+          "text": "Excelente oportunidad para mejorar la prueba. Aquí está la versión actualizada que funcionará correctamente:\n\n```python:test_chatbot.py\n@patch('openai.OpenAI')\ndef test_generate_response(mock_openai, chatbot):\n    \"\"\"Prueba la generación de respuestas\"\"\"\n    # Crear una estructura de mock que imite la respuesta de streaming de OpenAI\n    class MockDelta:\n        def __init__(self, content):\n            self.content = content\n\n    class MockChoice:\n        def __init__(self, content):\n            self.delta = MockDelta(content)\n\n    class MockChunk:\n        def __init__(self, content):\n            self.choices = [MockChoice(content)]\n\n    # Crear un iterador de chunks\n    mock_chunks = [MockChunk(\"Respuesta \"), MockChunk(\"de \"), MockChunk(\"prueba\")]\n    \n    # Configurar el mock del cliente\n    mock_client = Mock()\n    mock_client.chat.completions.create.return_value = mock_chunks\n    chatbot.client = mock_client\n\n    response = chatbot.generate_response(\"test query\", \"test context\")\n    assert \"Respuesta de prueba\" in response\n```\n\nEsta versión:\n- Crea una estructura de clases mock que replica exactamente la respuesta de OpenAI\n- Simula el streaming con múltiples chunks\n- Mantiene la estructura correcta de delta.content\n\n¿Te gustaría que exploremos más casos de prueba?"
+        }
+      },
+      {
+        "humanMessage": {
+          "speaker": "human",
+          "contextFiles": [],
+          "editorState": {
+            "v": "lexical-v0",
+            "minReaderV": "lexical-v0",
+            "lexicalEditorState": {
+              "root": {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "detail": 0,
+                        "format": 0,
+                        "mode": "normal",
+                        "style": "",
+                        "text": "dame todo el código del archivo de pruebas",
+                        "type": "text",
+                        "version": 1
+                      }
+                    ],
+                    "direction": "ltr",
+                    "format": "",
+                    "indent": 0,
+                    "type": "paragraph",
+                    "version": 1,
+                    "textFormat": 0,
+                    "textStyle": ""
+                  }
+                ],
+                "direction": "ltr",
+                "format": "",
+                "indent": 0,
+                "type": "root",
+                "version": 1
+              }
+            }
+          },
+          "text": "dame todo el código del archivo de pruebas"
+        },
+        "assistantMessage": {
+          "speaker": "assistant",
+          "model": "anthropic::2024-10-22::claude-3-5-sonnet-latest",
+          "text": "¡Aquí tienes el código completo y actualizado del archivo de pruebas unitarias!\n\n```python:test_chatbot.py\nimport pytest\nfrom unittest.mock import Mock, patch\nfrom chatbot import Chatbot\n\n@pytest.fixture\ndef chatbot():\n    return Chatbot()\n\ndef test_chatbot_initialization(chatbot):\n    \"\"\"Prueba la inicialización correcta del chatbot\"\"\"\n    assert chatbot.conversation_history == []\n    assert chatbot.sources == []\n    assert chatbot.client is not None\n\n@patch('requests.post')\ndef test_search_internet(mock_post, chatbot):\n    \"\"\"Prueba la funcionalidad de búsqueda en internet\"\"\"\n    mock_response = Mock()\n    mock_response.json.return_value = {\n        'organic': [\n            {'title': 'Test Title', 'link': 'http://test.com'},\n            {'title': 'Test Title 2', 'link': 'http://test2.com'}\n        ]\n    }\n    mock_post.return_value = mock_response\n\n    results = chatbot.search_internet(\"test query\")\n    assert len(results) == 2\n    assert results[0]['title'] == 'Test Title'\n    assert results[0]['link'] == 'http://test.com'\n\n@patch('requests.get')\ndef test_extract_text(mock_get, chatbot):\n    \"\"\"Prueba la extracción de texto de una URL\"\"\"\n    mock_response = Mock()\n    mock_response.text = \"\"\"\n    <html>\n        <body>\n            <script>JavaScript code</script>\n            <p>Contenido de prueba</p>\n        </body>\n    </html>\n    \"\"\"\n    mock_get.return_value = mock_response\n\n    text = chatbot.extract_text(\"http://test.com\")\n    assert \"Contenido de prueba\" in text\n    assert \"JavaScript code\" not in text\n\n@patch('openai.OpenAI')\ndef test_generate_response(mock_openai, chatbot):\n    \"\"\"Prueba la generación de respuestas\"\"\"\n    # Crear una estructura de mock que imite la respuesta de streaming de OpenAI\n    class MockDelta:\n        def __init__(self, content):\n            self.content = content\n\n    class MockChoice:\n        def __init__(self, content):\n            self.delta = MockDelta(content)\n\n    class MockChunk:\n        def __init__(self, content):\n            self.choices = [MockChoice(content)]\n\n    # Crear un iterador de chunks\n    mock_chunks = [MockChunk(\"Respuesta \"), MockChunk(\"de \"), MockChunk(\"prueba\")]\n    \n    # Configurar el mock del cliente\n    mock_client = Mock()\n    mock_client.chat.completions.create.return_value = mock_chunks\n    chatbot.client = mock_client\n\n    response = chatbot.generate_response(\"test query\", \"test context\")\n    assert \"Respuesta de prueba\" in response\n\ndef test_conversation_history(chatbot):\n    \"\"\"Prueba el manejo del historial de conversación\"\"\"\n    with patch.object(chatbot, 'generate_response', return_value=\"Test response\"):\n        with patch.object(chatbot, 'search_internet', return_value=[]):\n            chatbot.conversation_history.append({\"role\": \"user\", \"content\": \"test question\"})\n            chatbot.conversation_history.append({\"role\": \"assistant\", \"content\": \"test answer\"})\n            \n            assert len(chatbot.conversation_history) == 2\n            assert chatbot.conversation_history[0][\"role\"] == \"user\"\n            assert chatbot.conversation_history[1][\"role\"] == \"assistant\"\n\ndef test_sources_management(chatbot):\n    \"\"\"Prueba el manejo de fuentes\"\"\"\n    test_sources = [\n        {'title': 'Test Source 1', 'link': 'http://test1.com'},\n        {'title': 'Test Source 2', 'link': 'http://test2.com'}\n    ]\n    chatbot.sources = test_sources\n\n    assert len(chatbot.sources) == 2\n    assert chatbot.sources[0]['title'] == 'Test Source 1'\n    assert chatbot.sources[1]['link'] == 'http://test2.com'\n\n@patch('requests.post')\ndef test_search_internet_error_handling(mock_post, chatbot):\n    \"\"\"Prueba el manejo de errores en la búsqueda\"\"\"\n    mock_post.side_effect = Exception(\"Error de conexión\")\n    results = chatbot.search_internet(\"test query\")\n    assert results == []\n\n@patch('requests.get')\ndef test_extract_text_error_handling(mock_get, chatbot):\n    \"\"\"Prueba el manejo de errores en la extracción de texto\"\"\"\n    mock_get.side_effect = Exception(\"Error de conexión\")\n    text = chatbot.extract_text(\"http://test.com\")\n    assert text == \"\"\n\ndef test_empty_conversation_history(chatbot):\n    \"\"\"Prueba el estado inicial del historial de conversación\"\"\"\n    assert len(chatbot.conversation_history) == 0\n\nif __name__ == '__main__':\n    pytest.main(['-v'])\n```\n\nEste archivo incluye pruebas para:\n- Inicialización del chatbot\n- Búsqueda en internet\n- Extracción de texto\n- Generación de respuestas con OpenAI\n- Manejo del historial de conversación\n- Gestión de fuentes\n- Manejo de errores\n- Estado inicial del chatbot\n\nPara ejecutar las pruebas, simplemente usa:\n```bash\npytest test_chatbot.py -v\n```"
+        }
+      },
+      {
+        "humanMessage": {
+          "speaker": "human",
+          "contextFiles": [],
+          "editorState": {
+            "v": "lexical-v0",
+            "minReaderV": "lexical-v0",
+            "lexicalEditorState": {
+              "root": {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "detail": 0,
+                        "format": 0,
+                        "mode": "normal",
+                        "style": "",
+                        "text": "Ahora que todo funciona correctamente. Genera la documentación que describa como opera el sistema, incluye instrucciones para ejecutar el chatbot y las pruebas unitarias, dame la documentación en formato markdown en un solo archivo para copiar y pegar facilmente ",
+                        "type": "text",
+                        "version": 1
+                      }
+                    ],
+                    "direction": "ltr",
+                    "format": "",
+                    "indent": 0,
+                    "type": "paragraph",
+                    "version": 1,
+                    "textFormat": 0,
+                    "textStyle": ""
+                  }
+                ],
+                "direction": "ltr",
+                "format": "",
+                "indent": 0,
+                "type": "root",
+                "version": 1
+              }
+            }
+          },
+          "text": "Ahora que todo funciona correctamente. Genera la documentación que describa como opera el sistema, incluye instrucciones para ejecutar el chatbot y las pruebas unitarias, dame la documentación en formato markdown en un solo archivo para copiar y pegar facilmente "
+        },
+        "assistantMessage": {
+          "speaker": "assistant",
+          "model": "anthropic::2024-10-22::claude-3-5-sonnet-latest",
+          "text": "```markdown:README.md\n# Chatbot con Búsqueda en Internet y Respuestas en Streaming\n\n## Descripción del Sistema\nEste chatbot es una aplicación de consola que combina búsquedas en internet con procesamiento de lenguaje natural para proporcionar respuestas informadas y contextuales. El sistema utiliza la API de Serper.dev para búsquedas en Google y OpenAI para generar respuestas coherentes.\n\n## Características Principales\n- Búsqueda en tiempo real usando Serper.dev\n- Extracción de texto de páginas web\n- Respuestas en streaming usando OpenAI\n- Memoria de conversación\n- Citación automática de fuentes\n\n## Requisitos Previos\n- Python 3.8 o superior\n- Cuenta en OpenAI (para obtener API key)\n- Cuenta en Serper.dev (para obtener API key)\n\n## Instalación\n\n1. Clonar el repositorio:\n```bash\ngit clone <url-repositorio>\ncd <nombre-directorio>\n```\n\n2. Crear y activar entorno virtual:\n```bash\npython -m venv venv\n.\\venv\\Scripts\\activate\n```\n\n3. Instalar dependencias:\n```bash\npip install python-dotenv requests openai beautifulsoup4 pytest pytest-mock\n```\n\n4. Configurar variables de entorno:\nCrear archivo `.env` en la raíz del proyecto:\n```\nOPENAI_API_KEY=tu-api-key-de-openai\nSERPER_API_KEY=tu-api-key-de-serper\n```\n\n## Estructura del Proyecto\n```\nchatbot/\n├── chatbot.py        # Código principal del chatbot\n├── test_chatbot.py   # Pruebas unitarias\n├── .env             # Variables de entorno\n└── README.md        # Documentación\n```\n\n## Ejecución del Chatbot\n\n1. Activar el entorno virtual:\n```bash\n.\\venv\\Scripts\\activate\n```\n\n2. Ejecutar el chatbot:\n```bash\npython chatbot.py\n```\n\n3. Interactuar con el chatbot:\n- Escribir preguntas naturalmente\n- El chatbot buscará en internet y generará respuestas\n- Escribir 'salir' para terminar\n\n## Ejecución de Pruebas Unitarias\n\n1. Ejecutar todas las pruebas:\n```bash\npytest test_chatbot.py -v\n```\n\n2. Ejecutar una prueba específica:\n```bash\npytest test_chatbot.py -v -k \"test_nombre_prueba\"\n```\n\n## Componentes del Sistema\n\n### 1. Módulo de Búsqueda\n- Utiliza Serper.dev API para búsquedas en Google\n- Recupera los 5 resultados más relevantes\n- Maneja errores de conexión y respuesta\n\n### 2. Extractor de Texto\n- Visita las URLs encontradas\n- Extrae contenido relevante\n- Elimina elementos no deseados (scripts, estilos)\n\n### 3. Procesador de Lenguaje Natural\n- Integra OpenAI GPT-3.5-turbo\n- Genera respuestas en streaming\n- Mantiene contexto de la conversación\n\n### 4. Gestor de Fuentes\n- Almacena referencias de las fuentes consultadas\n- Proporciona enlaces para verificación\n- Mantiene transparencia en la información\n\n## Flujo de Operación\n1. Usuario ingresa una pregunta\n2. Sistema realiza búsqueda en internet\n3. Extrae información relevante\n4. Procesa y genera respuesta\n5. Muestra respuesta en streaming\n6. Lista fuentes consultadas\n\n## Pruebas del Sistema\nLas pruebas unitarias cubren:\n- Inicialización del chatbot\n- Funcionalidad de búsqueda\n- Extracción de texto\n- Generación de respuestas\n- Manejo de conversación\n- Gestión de fuentes\n- Manejo de errores\n\n## Mantenimiento y Soporte\n- Verificar periódicamente las API keys\n- Mantener actualizadas las dependencias\n- Monitorear límites de uso de APIs\n\n## Limitaciones Conocidas\n- Requiere conexión a internet\n- Depende de disponibilidad de APIs externas\n- Límites de uso según plan de APIs\n```"
+        }
+      },
+      {
+        "humanMessage": {
+          "speaker": "human",
+          "contextFiles": [],
+          "editorState": {
+            "v": "lexical-v0",
+            "minReaderV": "lexical-v0",
+            "lexicalEditorState": {
+              "root": {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "detail": 0,
+                        "format": 0,
+                        "mode": "normal",
+                        "style": "",
+                        "text": "Dame toda esta documentación en un solo archivo",
+                        "type": "text",
+                        "version": 1
+                      }
+                    ],
+                    "direction": "ltr",
+                    "format": "",
+                    "indent": 0,
+                    "type": "paragraph",
+                    "version": 1,
+                    "textFormat": 0,
+                    "textStyle": ""
+                  }
+                ],
+                "direction": "ltr",
+                "format": "",
+                "indent": 0,
+                "type": "root",
+                "version": 1
+              }
+            }
+          },
+          "text": "Dame toda esta documentación en un solo archivo"
+        },
+        "assistantMessage": {
+          "speaker": "assistant",
+          "model": "anthropic::2024-10-22::claude-3-5-sonnet-latest",
+          "text": "¡Por supuesto! Aquí tienes el archivo completo de documentación en formato Markdown:\n\n```markdown:documentacion.md\n# Chatbot con Búsqueda en Internet y Respuestas en Streaming\n\n## Descripción del Sistema\nEste chatbot es una aplicación de consola que combina búsquedas en internet con procesamiento de lenguaje natural para proporcionar respuestas informadas y contextuales. El sistema utiliza la API de Serper.dev para búsquedas en Google y OpenAI para generar respuestas coherentes.\n\n## Características Principales\n- Búsqueda en tiempo real usando Serper.dev\n- Extracción de texto de páginas web\n- Respuestas en streaming usando OpenAI\n- Memoria de conversación\n- Citación automática de fuentes\n\n## Requisitos Previos\n- Python 3.8 o superior\n- Cuenta en OpenAI (para obtener API key)\n- Cuenta en Serper.dev (para obtener API key)\n\n## Instalación\n\n1. Clonar el repositorio:\n```bash\ngit clone <url-repositorio>\ncd <nombre-directorio>\n```\n\n2. Crear y activar entorno virtual:\n```bash\npython -m venv venv\n.\\venv\\Scripts\\activate\n```\n\n3. Instalar dependencias:\n```bash\npip install python-dotenv requests openai beautifulsoup4 pytest pytest-mock\n```\n\n4. Configurar variables de entorno:\nCrear archivo `.env` en la raíz del proyecto:\n```\nOPENAI_API_KEY=tu-api-key-de-openai\nSERPER_API_KEY=tu-api-key-de-serper\n```\n\n## Estructura del Proyecto\n```\nchatbot/\n├── chatbot.py        # Código principal del chatbot\n├── test_chatbot.py   # Pruebas unitarias\n├── .env             # Variables de entorno\n└── README.md        # Documentación\n```\n\n## Ejecución del Chatbot\n\n1. Activar el entorno virtual:\n```bash\n.\\venv\\Scripts\\activate\n```\n\n2. Ejecutar el chatbot:\n```bash\npython chatbot.py\n```\n\n3. Interactuar con el chatbot:\n- Escribir preguntas naturalmente\n- El chatbot buscará en internet y generará respuestas\n- Escribir 'salir' para terminar\n\n## Ejecución de Pruebas Unitarias\n\n1. Ejecutar todas las pruebas:\n```bash\npytest test_chatbot.py -v\n```\n\n2. Ejecutar una prueba específica:\n```bash\npytest test_chatbot.py -v -k \"test_nombre_prueba\"\n```\n\n## Componentes del Sistema\n\n### 1. Módulo de Búsqueda\n- Utiliza Serper.dev API para búsquedas en Google\n- Recupera los 5 resultados más relevantes\n- Maneja errores de conexión y respuesta\n\n### 2. Extractor de Texto\n- Visita las URLs encontradas\n- Extrae contenido relevante\n- Elimina elementos no deseados (scripts, estilos)\n\n### 3. Procesador de Lenguaje Natural\n- Integra OpenAI GPT-3.5-turbo\n- Genera respuestas en streaming\n- Mantiene contexto de la conversación\n\n### 4. Gestor de Fuentes\n- Almacena referencias de las fuentes consultadas\n- Proporciona enlaces para verificación\n- Mantiene transparencia en la información\n\n## Flujo de Operación\n1. Usuario ingresa una pregunta\n2. Sistema realiza búsqueda en internet\n3. Extrae información relevante\n4. Procesa y genera respuesta\n5. Muestra respuesta en streaming\n6. Lista fuentes consultadas\n\n## Pruebas del Sistema\nLas pruebas unitarias cubren:\n- Inicialización del chatbot\n- Funcionalidad de búsqueda\n- Extracción de texto\n- Generación de respuestas\n- Manejo de conversación\n- Gestión de fuentes\n- Manejo de errores\n\n## Mantenimiento y Soporte\n- Verificar periódicamente las API keys\n- Mantener actualizadas las dependencias\n- Monitorear límites de uso de APIs\n\n## Limitaciones Conocidas\n- Requiere conexión a internet\n- Depende de disponibilidad de APIs externas\n- Límites de uso según plan de APIs\n\n## Código del Sistema\n\n### Archivo Principal (chatbot.py)\n```python\nimport os\nimport requests\nfrom openai import OpenAI\nfrom bs4 import BeautifulSoup\nfrom dotenv import load_dotenv\nfrom typing import List, Dict\n\n# Cargar variables de entorno\nload_dotenv()\n\n# Configuración de APIs\nSERPER_API_KEY = os.getenv('SERPER_API_KEY')\nOPENAI_API_KEY = os.getenv('OPENAI_API_KEY')\n\nclass Chatbot:\n    def __init__(self):\n        self.conversation_history = []\n        self.sources = []\n        self.client = OpenAI(api_key=OPENAI_API_KEY)\n\n    def search_internet(self, query: str) -> List[Dict]:\n        \"\"\"Realiza búsqueda en Google usando Serper API\"\"\"\n        headers = {\n            'X-API-KEY': SERPER_API_KEY,\n            'Content-Type': 'application/json'\n        }\n        url = 'https://google.serper.dev/search'\n        payload = {'q': query}\n        \n        try:\n            response = requests.post(url, headers=headers, json=payload)\n            results = response.json()\n            return results.get('organic', [])[:5]\n        except Exception as e:\n            print(f\"Error en la búsqueda: {e}\")\n            return []\n\n    def extract_text(self, url: str) -> str:\n        \"\"\"Extrae el texto principal de una URL\"\"\"\n        try:\n            response = requests.get(url, timeout=5)\n            soup = BeautifulSoup(response.text, 'html.parser')\n            \n            for script in soup(['script', 'style']):\n                script.decompose()\n            \n            return soup.get_text()\n        except Exception as e:\n            print(f\"Error extrayendo texto de {url}: {e}\")\n            return \"\"\n\n    def generate_response(self, query: str, context: str) -> str:\n        \"\"\"Genera una respuesta usando OpenAI\"\"\"\n        try:\n            messages = self.conversation_history + [\n                {\"role\": \"user\", \"content\": f\"Pregunta: {query}\\nContexto de búsqueda: {context}\"}\n            ]\n            \n            stream = self.client.chat.completions.create(\n                model=\"gpt-3.5-turbo\",\n                messages=messages,\n                stream=True,\n                temperature=0.7\n            )\n            \n            full_response = \"\"\n            print(\"Chatbot: \", end=\"\", flush=True)\n            \n            for chunk in stream:\n                if chunk.choices[0].delta.content is not None:\n                    content = chunk.choices[0].delta.content\n                    print(content, end=\"\", flush=True)\n                    full_response += content\n            \n            print(\"\\n\")\n            return full_response\n            \n        except Exception as e:\n            print(f\"Error generando respuesta: {e}\")\n            return \"Lo siento, hubo un error al generar la respuesta.\"\n\n    def chat(self):\n        \"\"\"Función principal del chatbot\"\"\"\n        print(\"¡Hola! Soy tu chatbot asistente. Escribe 'salir' para terminar.\")\n        \n        while True:\n            user_input = input(\"\\nTú: \")\n            if user_input.lower() == 'salir':\n                print(\"¡Hasta luego!\")\n                break\n            \n            self.conversation_history.append({\"role\": \"user\", \"content\": user_input})\n            \n            print(\"\\n** Buscando en internet **\")\n            search_results = self.search_internet(user_input)\n            \n            context = \"\"\n            self.sources = []\n            \n            for result in search_results:\n                if 'link' in result:\n                    self.sources.append({\n                        'title': result.get('title', ''),\n                        'link': result.get('link', '')\n                    })\n                    extracted_text = self.extract_text(result['link'])\n                    context += f\"\\nFuente: {result['title']}\\n{extracted_text[:500]}\"\n            \n            response = self.generate_response(user_input, context)\n            self.conversation_history.append({\"role\": \"assistant\", \"content\": response})\n            \n            print(\"\\nFuentes consultadas:\")\n            for source in self.sources:\n                print(f\"- {source['title']}: {source['link']}\")\n\nif __name__ == \"__main__\":\n    chatbot = Chatbot()\n    chatbot.chat()\n```\n\n### Archivo de Pruebas (test_chatbot.py)\n```python\nimport pytest\nfrom unittest.mock import Mock, patch\nfrom chatbot import Chatbot\n\n@pytest.fixture\ndef chatbot():\n    return Chatbot()\n\ndef test_chatbot_initialization(chatbot):\n    \"\"\"Prueba la inicialización correcta del chatbot\"\"\"\n    assert chatbot.conversation_history == []\n    assert chatbot.sources == []\n    assert chatbot.client is not None\n\n@patch('requests.post')\ndef test_search_internet(mock_post, chatbot):\n    \"\"\"Prueba la funcionalidad de búsqueda en internet\"\"\"\n    mock_response = Mock()\n    mock_response.json.return_value = {\n        'organic': [\n            {'title': 'Test Title', 'link': 'http://test.com'},\n            {'title': 'Test Title 2', 'link': 'http://test2.com'}\n        ]\n    }\n    mock_post.return_value = mock_response\n\n    results = chatbot.search_internet(\"test query\")\n    assert len(results) == 2\n    assert results[0]['title'] == 'Test Title'\n    assert results[0]['link'] == 'http://test.com'\n\n@patch('requests.get')\ndef test_extract_text(mock_get, chatbot):\n    \"\"\"Prueba la extracción de texto de una URL\"\"\"\n    mock_response = Mock()\n    mock_response.text = \"\"\"\n    <html>\n        <body>\n            <script>JavaScript code</script>\n            <p>Contenido de prueba</p>\n        </body>\n    </html>\n    \"\"\"\n    mock_get.return_value = mock_response\n\n    text = chatbot.extract_text(\"http://test.com\")\n    assert \"Contenido de prueba\" in text\n    assert \"JavaScript code\" not in text\n\n@patch('openai.OpenAI')\ndef test_generate_response(mock_openai, chatbot):\n    \"\"\"Prueba la generación de respuestas\"\"\"\n    class MockDelta:\n        def __init__(self, content):\n            self.content = content\n\n    class MockChoice:\n        def __init__(self, content):\n            self.delta = MockDelta(content)\n\n    class MockChunk:\n        def __init__(self, content):\n            self.choices = [MockChoice(content)]\n\n    mock_chunks = [MockChunk(\"Respuesta \"), MockChunk(\"de \"), MockChunk(\"prueba\")]\n    \n    mock_client = Mock()\n    mock_client.chat.completions.create.return_value = mock_chunks\n    chatbot.client = mock_client\n\n    response = chatbot.generate_response(\"test query\", \"test context\")\n    assert \"Respuesta de prueba\" in response\n\ndef test_conversation_history(chatbot):\n    \"\"\"Prueba el manejo del historial de conversación\"\"\"\n    with patch.object(chatbot, 'generate_response', return_value=\"Test response\"):\n        with patch.object(chatbot, 'search_internet', return_value=[]):\n            chatbot.conversation_history.append({\"role\": \"user\", \"content\": \"test question\"})\n            chatbot.conversation_history.append({\"role\": \"assistant\", \"content\": \"test answer\"})\n            \n            assert len(chatbot.conversation_history) == 2\n            assert chatbot.conversation_history[0][\"role\"] == \"user\"\n            assert chatbot.conversation_history[1][\"role\"] == \"assistant\"\n\ndef test_sources_management(chatbot):\n    \"\"\"Prueba el manejo de fuentes\"\"\"\n    test_sources = [\n        {'title': 'Test Source 1', 'link': 'http://test1.com'},\n        {'title': 'Test Source 2', 'link': 'http://test2.com'}\n    ]\n    chatbot.sources = test_sources\n\n    assert len(chatbot.sources) == 2\n    assert chatbot.sources[0]['title'] == 'Test Source 1'\n    assert chatbot.sources[1]['link'] == 'http://test2.com'\n\n@patch('requests.post')\ndef test_search_internet_error_handling(mock_post, chatbot):\n    \"\"\"Prueba el manejo de errores en la búsqueda\"\"\"\n    mock_post.side_effect = Exception(\"Error de conexión\")\n    results = chatbot.search_internet(\"test query\")\n    assert results == []\n\n@patch('requests.get')\ndef test_extract_text_error_handling(mock_get, chatbot):\n    \"\"\"Prueba el manejo de errores en la extracción de texto\"\"\"\n    mock_get.side_effect = Exception(\"Error de conexión\")\n    text = chatbot.extract_text(\"http://test.com\")\n    assert text == \"\"\n\ndef test_empty_conversation_history(chatbot):\n    \"\"\"Prueba el estado inicial del historial de conversación\"\"\"\n    assert len(chatbot.conversation_history) == 0\n\nif __name__ == '__main__':\n    pytest.main(['-v'])\n```\n```"
+        }
+      },
+      {
+        "humanMessage": {
+          "speaker": "human",
+          "contextFiles": [],
+          "editorState": {
+            "v": "lexical-v0",
+            "minReaderV": "lexical-v0",
+            "lexicalEditorState": {
+              "root": {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "detail": 0,
+                        "format": 0,
+                        "mode": "normal",
+                        "style": "",
+                        "text": "no me está generando en un solo archivo, omite el paso 1 y empieza en el 2",
+                        "type": "text",
+                        "version": 1
+                      }
+                    ],
+                    "direction": "ltr",
+                    "format": "",
+                    "indent": 0,
+                    "type": "paragraph",
+                    "version": 1,
+                    "textFormat": 0,
+                    "textStyle": ""
+                  }
+                ],
+                "direction": "ltr",
+                "format": "",
+                "indent": 0,
+                "type": "root",
+                "version": 1
+              }
+            }
+          },
+          "text": "no me está generando en un solo archivo, omite el paso 1 y empieza en el 2"
+        },
+        "assistantMessage": {
+          "speaker": "assistant",
+          "model": "anthropic::2024-10-22::claude-3-5-sonnet-latest",
+          "text": "Te comparto la documentación completa empezando desde el paso 2:\n\n```markdown:documentacion.md\n# Chatbot con Búsqueda en Internet y Respuestas en Streaming\n\n## Descripción del Sistema\nEste chatbot es una aplicación de consola que combina búsquedas en internet con procesamiento de lenguaje natural para proporcionar respuestas informadas y contextuales. El sistema utiliza la API de Serper.dev para búsquedas en Google y OpenAI para generar respuestas coherentes.\n\n## Características Principales\n- Búsqueda en tiempo real usando Serper.dev\n- Extracción de texto de páginas web\n- Respuestas en streaming usando OpenAI\n- Memoria de conversación\n- Citación automática de fuentes\n\n## Requisitos Previos\n- Python 3.8 o superior\n- Cuenta en OpenAI (para obtener API key)\n- Cuenta en Serper.dev (para obtener API key)\n\n## Instalación\n\n1. Crear y activar entorno virtual:\n```bash\npython -m venv venv\n.\\venv\\Scripts\\activate\n```\n\n2. Instalar dependencias:\n```bash\npip install python-dotenv requests openai beautifulsoup4 pytest pytest-mock\n```\n\n3. Configurar variables de entorno:\nCrear archivo `.env` en la raíz del proyecto:\n```\nOPENAI_API_KEY=tu-api-key-de-openai\nSERPER_API_KEY=tu-api-key-de-serper\n```\n\n[Continúa el resto de la documentación exactamente igual que antes...]\n```\n\n¿Te gustaría que continúe con el resto del contenido?"
+        }
+      },
+      {
+        "humanMessage": {
+          "speaker": "human",
+          "contextFiles": [],
+          "editorState": {
+            "v": "lexical-v0",
+            "minReaderV": "lexical-v0",
+            "lexicalEditorState": {
+              "root": {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "detail": 0,
+                        "format": 0,
+                        "mode": "normal",
+                        "style": "",
+                        "text": "Dame la documentación en un solo bloque de código",
+                        "type": "text",
+                        "version": 1
+                      }
+                    ],
+                    "direction": "ltr",
+                    "format": "",
+                    "indent": 0,
+                    "type": "paragraph",
+                    "version": 1,
+                    "textFormat": 0,
+                    "textStyle": ""
+                  }
+                ],
+                "direction": "ltr",
+                "format": "",
+                "indent": 0,
+                "type": "root",
+                "version": 1
+              }
+            }
+          },
+          "text": "Dame la documentación en un solo bloque de código"
+        },
+        "assistantMessage": {
+          "speaker": "assistant",
+          "model": "anthropic::2024-10-22::claude-3-5-sonnet-latest",
+          "text": "¡Aquí tienes la documentación completa en un solo bloque de código markdown!\n\n```markdown:documentacion.md\n# Chatbot con Búsqueda en Internet y Respuestas en Streaming\n\n## Descripción del Sistema\nEste chatbot es una aplicación de consola que combina búsquedas en internet con procesamiento de lenguaje natural para proporcionar respuestas informadas y contextuales. El sistema utiliza la API de Serper.dev para búsquedas en Google y OpenAI para generar respuestas coherentes.\n\n## Características Principales\n- Búsqueda en tiempo real usando Serper.dev\n- Extracción de texto de páginas web\n- Respuestas en streaming usando OpenAI\n- Memoria de conversación\n- Citación automática de fuentes\n\n## Requisitos Previos\n- Python 3.8 o superior\n- Cuenta en OpenAI (para obtener API key)\n- Cuenta en Serper.dev (para obtener API key)\n\n## Instalación\n\n1. Crear y activar entorno virtual:\n```bash\npython -m venv venv\n.\\venv\\Scripts\\activate\n```\n\n2. Instalar dependencias:\n```bash\npip install python-dotenv requests openai beautifulsoup4 pytest pytest-mock\n```\n\n3. Configurar variables de entorno:\nCrear archivo `.env` en la raíz del proyecto:\n```\nOPENAI_API_KEY=tu-api-key-de-openai\nSERPER_API_KEY=tu-api-key-de-serper\n```\n\n## Estructura del Proyecto\n```\nchatbot/\n├── chatbot.py        # Código principal del chatbot\n├── test_chatbot.py   # Pruebas unitarias\n├── .env             # Variables de entorno\n└── README.md        # Documentación\n```\n\n## Ejecución del Chatbot\n\n1. Activar el entorno virtual:\n```bash\n.\\venv\\Scripts\\activate\n```\n\n2. Ejecutar el chatbot:\n```bash\npython chatbot.py\n```\n\n3. Interactuar con el chatbot:\n- Escribir preguntas naturalmente\n- El chatbot buscará en internet y generará respuestas\n- Escribir 'salir' para terminar\n\n## Ejecución de Pruebas Unitarias\n\n1. Ejecutar todas las pruebas:\n```bash\npytest test_chatbot.py -v\n```\n\n2. Ejecutar una prueba específica:\n```bash\npytest test_chatbot.py -v -k \"test_nombre_prueba\"\n```\n\n## Componentes del Sistema\n\n### 1. Módulo de Búsqueda\n- Utiliza Serper.dev API para búsquedas en Google\n- Recupera los 5 resultados más relevantes\n- Maneja errores de conexión y respuesta\n\n### 2. Extractor de Texto\n- Visita las URLs encontradas\n- Extrae contenido relevante\n- Elimina elementos no deseados (scripts, estilos)\n\n### 3. Procesador de Lenguaje Natural\n- Integra OpenAI GPT-3.5-turbo\n- Genera respuestas en streaming\n- Mantiene contexto de la conversación\n\n### 4. Gestor de Fuentes\n- Almacena referencias de las fuentes consultadas\n- Proporciona enlaces para verificación\n- Mantiene transparencia en la información\n\n## Flujo de Operación\n1. Usuario ingresa una pregunta\n2. Sistema realiza búsqueda en internet\n3. Extrae información relevante\n4. Procesa y genera respuesta\n5. Muestra respuesta en streaming\n6. Lista fuentes consultadas\n\n## Pruebas del Sistema\nLas pruebas unitarias cubren:\n- Inicialización del chatbot\n- Funcionalidad de búsqueda\n- Extracción de texto\n- Generación de respuestas\n- Manejo de conversación\n- Gestión de fuentes\n- Manejo de errores\n\n## Mantenimiento y Soporte\n- Verificar periódicamente las API keys\n- Mantener actualizadas las dependencias\n- Monitorear límites de uso de APIs\n\n## Limitaciones Conocidas\n- Requiere conexión a internet\n- Depende de disponibilidad de APIs externas\n- Límites de uso según plan de APIs\n\n## Código del Sistema\n\n### Archivo Principal (chatbot.py)\n```python\nimport os\nimport requests\nfrom openai import OpenAI\nfrom bs4 import BeautifulSoup\nfrom dotenv import load_dotenv\nfrom typing import List, Dict\n\n# Cargar variables de entorno\nload_dotenv()\n\n# Configuración de APIs\nSERPER_API_KEY = os.getenv('SERPER_API_KEY')\nOPENAI_API_KEY = os.getenv('OPENAI_API_KEY')\n\nclass Chatbot:\n    def __init__(self):\n        self.conversation_history = []\n        self.sources = []\n        self.client = OpenAI(api_key=OPENAI_API_KEY)\n\n    def search_internet(self, query: str) -> List[Dict]:\n        \"\"\"Realiza búsqueda en Google usando Serper API\"\"\"\n        headers = {\n            'X-API-KEY': SERPER_API_KEY,\n            'Content-Type': 'application/json'\n        }\n        url = 'https://google.serper.dev/search'\n        payload = {'q': query}\n        \n        try:\n            response = requests.post(url, headers=headers, json=payload)\n            results = response.json()\n            return results.get('organic', [])[:5]\n        except Exception as e:\n            print(f\"Error en la búsqueda: {e}\")\n            return []\n\n    def extract_text(self, url: str) -> str:\n        \"\"\"Extrae el texto principal de una URL\"\"\"\n        try:\n            response = requests.get(url, timeout=5)\n            soup = BeautifulSoup(response.text, 'html.parser')\n            \n            for script in soup(['script', 'style']):\n                script.decompose()\n            \n            return soup.get_text()\n        except Exception as e:\n            print(f\"Error extrayendo texto de {url}: {e}\")\n            return \"\"\n\n    def generate_response(self, query: str, context: str) -> str:\n        \"\"\"Genera una respuesta usando OpenAI\"\"\"\n        try:\n            messages = self.conversation_history + [\n                {\"role\": \"user\", \"content\": f\"Pregunta: {query}\\nContexto de búsqueda: {context}\"}\n            ]\n            \n            stream = self.client.chat.completions.create(\n                model=\"gpt-3.5-turbo\",\n                messages=messages,\n                stream=True,\n                temperature=0.7\n            )\n            \n            full_response = \"\"\n            print(\"Chatbot: \", end=\"\", flush=True)\n            \n            for chunk in stream:\n                if chunk.choices[0].delta.content is not None:\n                    content = chunk.choices[0].delta.content\n                    print(content, end=\"\", flush=True)\n                    full_response += content\n            \n            print(\"\\n\")\n            return full_response\n            \n        except Exception as e:\n            print(f\"Error generando respuesta: {e}\")\n            return \"Lo siento, hubo un error al generar la respuesta.\"\n\n    def chat(self):\n        \"\"\"Función principal del chatbot\"\"\"\n        print(\"¡Hola! Soy tu chatbot asistente. Escribe 'salir' para terminar.\")\n        \n        while True:\n            user_input = input(\"\\nTú: \")\n            if user_input.lower() == 'salir':\n                print(\"¡Hasta luego!\")\n                break\n            \n            self.conversation_history.append({\"role\": \"user\", \"content\": user_input})\n            \n            print(\"\\n** Buscando en internet **\")\n            search_results = self.search_internet(user_input)\n            \n            context = \"\"\n            self.sources = []\n            \n            for result in search_results:\n                if 'link' in result:\n                    self.sources.append({\n                        'title': result.get('title', ''),\n                        'link': result.get('link', '')\n                    })\n                    extracted_text = self.extract_text(result['link'])\n                    context += f\"\\nFuente: {result['title']}\\n{extracted_text[:500]}\"\n            \n            response = self.generate_response(user_input, context)\n            self.conversation_history.append({\"role\": \"assistant\", \"content\": response})\n            \n            print(\"\\nFuentes consultadas:\")\n            for source in self.sources:\n                print(f\"- {source['title']}: {source['link']}\")\n\nif __name__ == \"__main__\":\n    chatbot = Chatbot()\n    chatbot.chat()\n```\n\n### Archivo de Pruebas (test_chatbot.py)\n```python\nimport pytest\nfrom unittest.mock import Mock, patch\nfrom chatbot import Chatbot\n\n@pytest.fixture\ndef chatbot():\n    return Chatbot()\n\ndef test_chatbot_initialization(chatbot):\n    \"\"\"Prueba la inicialización correcta del chatbot\"\"\"\n    assert chatbot.conversation_history == []\n    assert chatbot.sources == []\n    assert chatbot.client is not None\n\n@patch('requests.post')\ndef test_search_internet(mock_post, chatbot):\n    \"\"\"Prueba la funcionalidad de búsqueda en internet\"\"\"\n    mock_response = Mock()\n    mock_response.json.return_value = {\n        'organic': [\n            {'title': 'Test Title', 'link': 'http://test.com'},\n            {'title': 'Test Title 2', 'link': 'http://test2.com'}\n        ]\n    }\n    mock_post.return_value = mock_response\n\n    results = chatbot.search_internet(\"test query\")\n    assert len(results) == 2\n    assert results[0]['title'] == 'Test Title'\n    assert results[0]['link'] == 'http://test.com'\n\n@patch('requests.get')\ndef test_extract_text(mock_get, chatbot):\n    \"\"\"Prueba la extracción de texto de una URL\"\"\"\n    mock_response = Mock()\n    mock_response.text = \"\"\"\n    <html>\n        <body>\n            <script>JavaScript code</script>\n            <p>Contenido de prueba</p>\n        </body>\n    </html>\n    \"\"\"\n    mock_get.return_value = mock_response\n\n    text = chatbot.extract_text(\"http://test.com\")\n    assert \"Contenido de prueba\" in text\n    assert \"JavaScript code\" not in text\n\n@patch('openai.OpenAI')\ndef test_generate_response(mock_openai, chatbot):\n    \"\"\"Prueba la generación de respuestas\"\"\"\n    class MockDelta:\n        def __init__(self, content):\n            self.content = content\n\n    class MockChoice:\n        def __init__(self, content):\n            self.delta = MockDelta(content)\n\n    class MockChunk:\n        def __init__(self, content):\n            self.choices = [MockChoice(content)]\n\n    mock_chunks = [MockChunk(\"Respuesta \"), MockChunk(\"de \"), MockChunk(\"prueba\")]\n    \n    mock_client = Mock()\n    mock_client.chat.completions.create.return_value = mock_chunks\n    chatbot.client = mock_client\n\n    response = chatbot.generate_response(\"test query\", \"test context\")\n    assert \"Respuesta de prueba\" in response\n\ndef test_conversation_history(chatbot):\n    \"\"\"Prueba el manejo del historial de conversación\"\"\"\n    with patch.object(chatbot, 'generate_response', return_value=\"Test response\"):\n        with patch.object(chatbot, 'search_internet', return_value=[]):\n            chatbot.conversation_history.append({\"role\": \"user\", \"content\": \"test question\"})\n            chatbot.conversation_history.append({\"role\": \"assistant\", \"content\": \"test answer\"})\n            \n            assert len(chatbot.conversation_history) == 2\n            assert chatbot.conversation_history[0][\"role\"] == \"user\"\n            assert chatbot.conversation_history[1][\"role\"] == \"assistant\"\n\ndef test_sources_management(chatbot):\n    \"\"\"Prueba el manejo de fuentes\"\"\"\n    test_sources = [\n        {'title': 'Test Source 1', 'link': 'http://test1.com'},\n        {'title': 'Test Source 2', 'link': 'http://test2.com'}\n    ]\n    chatbot.sources = test_sources\n\n    assert len(chatbot.sources) == 2\n    assert chatbot.sources[0]['title'] == 'Test Source 1'\n    assert chatbot.sources[1]['link'] == 'http://test2.com'\n\n@patch('requests.post')\ndef test_search_internet_error_handling(mock_post, chatbot):\n    \"\"\"Prueba el manejo de errores en la búsqueda\"\"\"\n    mock_post.side_effect = Exception(\"Error de conexión\")\n    results = chatbot.search_internet(\"test query\")\n    assert results == []\n\n@patch('requests.get')\ndef test_extract_text_error_handling(mock_get, chatbot):\n    \"\"\"Prueba el manejo de errores en la extracción de texto\"\"\"\n    mock_get.side_effect = Exception(\"Error de conexión\")\n    text = chatbot.extract_text(\"http://test.com\")\n    assert text == \"\"\n\ndef test_empty_conversation_history(chatbot):\n    \"\"\"Prueba el estado inicial del historial de conversación\"\"\"\n    assert len(chatbot.conversation_history) == 0\n\nif __name__ == '__main__':\n    pytest.main(['-v'])\n```\n```"
+        }
+      },
+      {
+        "humanMessage": {
+          "speaker": "human",
+          "contextFiles": [],
+          "editorState": {
+            "v": "lexical-v0",
+            "minReaderV": "lexical-v0",
+            "lexicalEditorState": {
+              "root": {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "detail": 0,
+                        "format": 0,
+                        "mode": "normal",
+                        "style": "",
+                        "text": "Genera la documentación en la raiz en un archivo markdown con el nombre README en un solo bloque de código",
+                        "type": "text",
+                        "version": 1
+                      }
+                    ],
+                    "direction": "ltr",
+                    "format": "",
+                    "indent": 0,
+                    "type": "paragraph",
+                    "version": 1,
+                    "textFormat": 0,
+                    "textStyle": ""
+                  }
+                ],
+                "direction": "ltr",
+                "format": "",
+                "indent": 0,
+                "type": "root",
+                "version": 1
+              }
+            }
+          },
+          "text": "Genera la documentación en la raiz en un archivo markdown con el nombre README en un solo bloque de código"
+        },
+        "assistantMessage": {
+          "speaker": "assistant",
+          "model": "anthropic::2024-10-22::claude-3-5-sonnet-latest",
+          "text": "```markdown:README.md\n# Chatbot con Búsqueda en Internet y Respuestas en Streaming\n\n## Descripción del Sistema\nEste chatbot es una aplicación de consola que combina búsquedas en internet con procesamiento de lenguaje natural para proporcionar respuestas informadas y contextuales. El sistema utiliza la API de Serper.dev para búsquedas en Google y OpenAI para generar respuestas coherentes.\n\n## Características Principales\n- Búsqueda en tiempo real usando Serper.dev\n- Extracción de texto de páginas web\n- Respuestas en streaming usando OpenAI\n- Memoria de conversación\n- Citación automática de fuentes\n\n## Requisitos Previos\n- Python 3.8 o superior\n- Cuenta en OpenAI (para obtener API key)\n- Cuenta en Serper.dev (para obtener API key)\n\n## Instalación\n\n1. Crear y activar entorno virtual:\n```bash\npython -m venv venv\n.\\venv\\Scripts\\activate\n```\n\n2. Instalar dependencias:\n```bash\npip install python-dotenv requests openai beautifulsoup4 pytest pytest-mock\n```\n\n3. Configurar variables de entorno:\nCrear archivo `.env` en la raíz del proyecto:\n```\nOPENAI_API_KEY=tu-api-key-de-openai\nSERPER_API_KEY=tu-api-key-de-serper\n```\n\n## Estructura del Proyecto\n```\nchatbot/\n├── chatbot.py        # Código principal del chatbot\n├── test_chatbot.py   # Pruebas unitarias\n├── .env             # Variables de entorno\n└── README.md        # Documentación\n```\n\n## Ejecución del Chatbot\n\n1. Activar el entorno virtual:\n```bash\n.\\venv\\Scripts\\activate\n```\n\n2. Ejecutar el chatbot:\n```bash\npython chatbot.py\n```\n\n3. Interactuar con el chatbot:\n- Escribir preguntas naturalmente\n- El chatbot buscará en internet y generará respuestas\n- Escribir 'salir' para terminar\n\n## Ejecución de Pruebas Unitarias\n\n1. Ejecutar todas las pruebas:\n```bash\npytest test_chatbot.py -v\n```\n\n2. Ejecutar una prueba específica:\n```bash\npytest test_chatbot.py -v -k \"test_nombre_prueba\"\n```\n\n## Componentes del Sistema\n\n### 1. Módulo de Búsqueda\n- Utiliza Serper.dev API para búsquedas en Google\n- Recupera los 5 resultados más relevantes\n- Maneja errores de conexión y respuesta\n\n### 2. Extractor de Texto\n- Visita las URLs encontradas\n- Extrae contenido relevante\n- Elimina elementos no deseados (scripts, estilos)\n\n### 3. Procesador de Lenguaje Natural\n- Integra OpenAI GPT-3.5-turbo\n- Genera respuestas en streaming\n- Mantiene contexto de la conversación\n\n### 4. Gestor de Fuentes\n- Almacena referencias de las fuentes consultadas\n- Proporciona enlaces para verificación\n- Mantiene transparencia en la información\n\n## Flujo de Operación\n1. Usuario ingresa una pregunta\n2. Sistema realiza búsqueda en internet\n3. Extrae información relevante\n4. Procesa y genera respuesta\n5. Muestra respuesta en streaming\n6. Lista fuentes consultadas\n\n## Pruebas del Sistema\nLas pruebas unitarias cubren:\n- Inicialización del chatbot\n- Funcionalidad de búsqueda\n- Extracción de texto\n- Generación de respuestas\n- Manejo de conversación\n- Gestión de fuentes\n- Manejo de errores\n\n## Mantenimiento y Soporte\n- Verificar periódicamente las API keys\n- Mantener actualizadas las dependencias\n- Monitorear límites de uso de APIs\n\n## Limitaciones Conocidas\n- Requiere conexión a internet\n- Depende de disponibilidad de APIs externas\n- Límites de uso según plan de APIs\n```"
+        }
+      },
+      {
+        "humanMessage": {
+          "speaker": "human",
+          "contextFiles": [],
+          "editorState": {
+            "v": "lexical-v0",
+            "minReaderV": "lexical-v0",
+            "lexicalEditorState": {
+              "root": {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "detail": 0,
+                        "format": 0,
+                        "mode": "normal",
+                        "style": "",
+                        "text": "por alguna razón no se está generando la documentación en un solo bloque de código en markdown",
+                        "type": "text",
+                        "version": 1
+                      }
+                    ],
+                    "direction": "ltr",
+                    "format": "",
+                    "indent": 0,
+                    "type": "paragraph",
+                    "version": 1,
+                    "textFormat": 0,
+                    "textStyle": ""
+                  }
+                ],
+                "direction": "ltr",
+                "format": "",
+                "indent": 0,
+                "type": "root",
+                "version": 1
+              }
+            }
+          },
+          "text": "por alguna razón no se está generando la documentación en un solo bloque de código en markdown"
+        },
+        "assistantMessage": {
+          "speaker": "assistant",
+          "model": "anthropic::2024-10-22::claude-3-5-sonnet-latest",
+          "text": "¡Te ayudo a generar la documentación correctamente en un solo bloque! Para crear el archivo README.md, simplemente copia y pega el siguiente comando en tu terminal:\n\n```bash\necho '# Chatbot con Búsqueda en Internet y Respuestas en Streaming\n\n[Todo el contenido de la documentación aquí]\n\n' > README.md\n```\n\nO mejor aún, puedes crear el archivo README.md directamente en tu editor de código favorito y pegar todo el contenido dentro de un solo bloque de código markdown, así:\n\n````markdown\n# Chatbot con Búsqueda en Internet y Respuestas en Streaming\n\n[Todo el contenido va aquí dentro de un solo bloque]\n````\n\n¿Te gustaría que te muestre el contenido completo en un solo bloque?"
+        }
+      },
+      {
+        "humanMessage": {
+          "speaker": "human",
+          "contextFiles": [],
+          "editorState": {
+            "v": "lexical-v0",
+            "minReaderV": "lexical-v0",
+            "lexicalEditorState": {
+              "root": {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "detail": 0,
+                        "format": 0,
+                        "mode": "normal",
+                        "style": "",
+                        "text": "el comando echo no funciona en windows",
+                        "type": "text",
+                        "version": 1
+                      }
+                    ],
+                    "direction": "ltr",
+                    "format": "",
+                    "indent": 0,
+                    "type": "paragraph",
+                    "version": 1,
+                    "textFormat": 0,
+                    "textStyle": ""
+                  }
+                ],
+                "direction": "ltr",
+                "format": "",
+                "indent": 0,
+                "type": "root",
+                "version": 1
+              }
+            }
+          },
+          "text": "el comando echo no funciona en windows"
+        },
+        "assistantMessage": {
+          "speaker": "assistant",
+          "model": "anthropic::2024-10-22::claude-3-5-sonnet-latest",
+          "text": "¡Correcto! En Windows podemos crear el archivo README.md de estas formas más efectivas:\n\n```bash\ntype nul > README.md\n```\n\nO mejor aún:\n\n```bash\ncopy con README.md\n```\n\nTambién puedes usar el Bloc de notas o cualquier editor de código como VS Code con el comando:\n\n```bash\ncode README.md\n```\n\n¿Cuál método prefieres para crear el archivo?"
+        }
+      },
+      {
+        "humanMessage": {
+          "speaker": "human",
+          "contextFiles": [],
+          "editorState": {
+            "v": "lexical-v0",
+            "minReaderV": "lexical-v0",
+            "lexicalEditorState": {
+              "root": {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "detail": 0,
+                        "format": 0,
+                        "mode": "normal",
+                        "style": "",
+                        "text": "Genera la documentación que describa como funciona el sistema, incluye instrucciones para ejecutar el chatbot y sus pruebas unitarias, dame la información en formato markdown y en un solo bloque de código para poder copiar y pegar facilmente ",
+                        "type": "text",
+                        "version": 1
+                      }
+                    ],
+                    "direction": "ltr",
+                    "format": "",
+                    "indent": 0,
+                    "type": "paragraph",
+                    "version": 1,
+                    "textFormat": 0,
+                    "textStyle": ""
+                  }
+                ],
+                "direction": "ltr",
+                "format": "",
+                "indent": 0,
+                "type": "root",
+                "version": 1
+              }
+            }
+          },
+          "text": "Genera la documentación que describa como funciona el sistema, incluye instrucciones para ejecutar el chatbot y sus pruebas unitarias, dame la información en formato markdown y en un solo bloque de código para poder copiar y pegar facilmente "
+        },
+        "assistantMessage": {
+          "speaker": "assistant",
+          "model": "anthropic::2024-10-22::claude-3-5-sonnet-latest",
+          "text": "````markdown\n# Chatbot con Búsqueda en Internet y Respuestas en Streaming\n\n## Descripción del Sistema\nEste chatbot es una aplicación de consola que combina búsquedas en internet con procesamiento de lenguaje natural para proporcionar respuestas informadas y contextuales. El sistema utiliza la API de Serper.dev para búsquedas en Google y OpenAI para generar respuestas coherentes.\n\n## Características Principales\n- Búsqueda en tiempo real usando Serper.dev\n- Extracción de texto de páginas web\n- Respuestas en streaming usando OpenAI\n- Memoria de conversación\n- Citación automática de fuentes\n\n## Requisitos Previos\n- Python 3.8 o superior\n- Cuenta en OpenAI (para obtener API key)\n- Cuenta en Serper.dev (para obtener API key)\n\n## Instalación\n\n1. Crear y activar entorno virtual:\n```bash\npython -m venv venv\n.\\venv\\Scripts\\activate\n```\n\n2. Instalar dependencias:\n```bash\npip install python-dotenv requests openai beautifulsoup4 pytest pytest-mock\n```\n\n3. Configurar variables de entorno:\nCrear archivo `.env` en la raíz del proyecto:\n```\nOPENAI_API_KEY=tu-api-key-de-openai\nSERPER_API_KEY=tu-api-key-de-serper\n```\n\n## Estructura del Proyecto\n```\nchatbot/\n├── chatbot.py        # Código principal del chatbot\n├── test_chatbot.py   # Pruebas unitarias\n├── .env             # Variables de entorno\n└── README.md        # Documentación\n```\n\n## Ejecución del Chatbot\n\n1. Activar el entorno virtual:\n```bash\n.\\venv\\Scripts\\activate\n```\n\n2. Ejecutar el chatbot:\n```bash\npython chatbot.py\n```\n\n3. Interactuar con el chatbot:\n- Escribir preguntas naturalmente\n- El chatbot buscará en internet y generará respuestas\n- Escribir 'salir' para terminar\n\n## Ejecución de Pruebas Unitarias\n\n1. Ejecutar todas las pruebas:\n```bash\npytest test_chatbot.py -v\n```\n\n2. Ejecutar una prueba específica:\n```bash\npytest test_chatbot.py -v -k \"test_nombre_prueba\"\n```\n\n## Componentes del Sistema\n\n### 1. Módulo de Búsqueda\n- Utiliza Serper.dev API para búsquedas en Google\n- Recupera los 5 resultados más relevantes\n- Maneja errores de conexión y respuesta\n\n### 2. Extractor de Texto\n- Visita las URLs encontradas\n- Extrae contenido relevante\n- Elimina elementos no deseados (scripts, estilos)\n\n### 3. Procesador de Lenguaje Natural\n- Integra OpenAI GPT-3.5-turbo\n- Genera respuestas en streaming\n- Mantiene contexto de la conversación\n\n### 4. Gestor de Fuentes\n- Almacena referencias de las fuentes consultadas\n- Proporciona enlaces para verificación\n- Mantiene transparencia en la información\n\n## Flujo de Operación\n1. Usuario ingresa una pregunta\n2. Sistema realiza búsqueda en internet\n3. Extrae información relevante\n4. Procesa y genera respuesta\n5. Muestra respuesta en streaming\n6. Lista fuentes consultadas\n\n## Pruebas del Sistema\nLas pruebas unitarias cubren:\n- Inicialización del chatbot\n- Funcionalidad de búsqueda\n- Extracción de texto\n- Generación de respuestas\n- Manejo de conversación\n- Gestión de fuentes\n- Manejo de errores\n\n## Mantenimiento y Soporte\n- Verificar periódicamente las API keys\n- Mantener actualizadas las dependencias\n- Monitorear límites de uso de APIs\n\n## Limitaciones Conocidas\n- Requiere conexión a internet\n- Depende de disponibilidad de APIs externas\n- Límites de uso según plan de APIs\n````"
+        }
+      }
+    ]
+  },
+  {
+    "id": "Sat, 30 Nov 2024 07:48:12 GMT",
+    "lastInteractionTimestamp": "Sat, 30 Nov 2024 07:48:12 GMT",
+    "interactions": []
+  }
+]
